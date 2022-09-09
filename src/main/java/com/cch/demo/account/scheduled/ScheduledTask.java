@@ -34,7 +34,7 @@ public class ScheduledTask {
     public void getToken() {
         log.info("==========发送请求给住建局,开始取token=========");
         try {
-//            String gettokenurl = "http://127.0.0.1:8082/api/open-saas-biz-service/open/getToken";
+ //          String gettokenurl = "http://127.0.0.1:8082/api/open-saas-biz-service/open/getToken";
             String gettokenurl = "http://22.36.12.109:20089/api/open-saas-biz-service/open/getToken";
             Map<String,String> gettokenbody = new HashMap<String,String>();
             gettokenbody.put("appId","dlfcApponI4vHNN");
