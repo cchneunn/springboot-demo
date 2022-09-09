@@ -1,0 +1,390 @@
+2021-12-10 10:07:07,091 INFO  [background-preinit] Version: HV000001: Hibernate Validator 6.0.13.Final
+2021-12-10 10:07:07,108 INFO  [main] SpringbootApplication: Starting SpringbootApplication using Java 1.8.0_131 on DESKTOP-UCTQGUL with PID 19304 (G:\springboot-demo\target\classes started by CCH in G:\springboot-demo)
+2021-12-10 10:07:07,108 INFO  [main] SpringbootApplication: The following profiles are active: test
+2021-12-10 10:07:09,402 INFO  [main] TomcatWebServer: Tomcat initialized with port(s): 8082 (http)
+2021-12-10 10:07:09,416 INFO  [main] Http11NioProtocol: Initializing ProtocolHandler ["http-nio-8082"]
+2021-12-10 10:07:09,416 INFO  [main] StandardService: Starting service [Tomcat]
+2021-12-10 10:07:09,417 INFO  [main] StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-10 10:07:09,418 INFO  [main] AprLifecycleListener: An older version [1.2.25] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2021-12-10 10:07:09,418 INFO  [main] AprLifecycleListener: Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-10 10:07:09,418 INFO  [main] AprLifecycleListener: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2021-12-10 10:07:09,418 INFO  [main] AprLifecycleListener: APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-10 10:07:09,527 INFO  [main] AprLifecycleListener: OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-10 10:07:09,713 INFO  [main] [/]: Initializing Spring embedded WebApplicationContext
+2021-12-10 10:07:09,713 INFO  [main] ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 2538 ms
+2021-12-10 10:07:10,724 INFO  [main] PropertySourcedRequestMappingHandlerMapping: Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-12-10 10:07:11,028 INFO  [main] Http11NioProtocol: Starting ProtocolHandler ["http-nio-8082"]
+2021-12-10 10:07:11,044 INFO  [main] TomcatWebServer: Tomcat started on port(s): 8082 (http) with context path ''
+2021-12-10 10:07:11,045 INFO  [main] DocumentationPluginsBootstrapper: Context refreshed
+2021-12-10 10:07:11,085 INFO  [main] DocumentationPluginsBootstrapper: Found 1 custom documentation plugin(s)
+2021-12-10 10:07:11,114 INFO  [main] ApiListingReferenceScanner: Scanning for api listing references
+2021-12-10 10:07:11,343 INFO  [main] SpringbootApplication: Started SpringbootApplication in 5.158 seconds (JVM running for 5.881)
+2021-12-10 10:07:20,005 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:07:20,495 INFO  [http-nio-8082-exec-1] [/]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-10 10:07:20,495 INFO  [http-nio-8082-exec-1] DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+2021-12-10 10:07:20,496 INFO  [http-nio-8082-exec-1] DispatcherServlet: Completed initialization in 1 ms
+2021-12-10 10:07:20,663 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:07:20,663 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:07:20,663 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-10 10:07:20,686 INFO  [scheduling-1] HikariDataSource: HikariPool-1 - Starting...
+2021-12-10 10:07:20,960 INFO  [scheduling-1] PoolBase: HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2021-12-10 10:07:20,966 INFO  [scheduling-1] HikariDataSource: HikariPool-1 - Start completed.
+2021-12-10 10:07:21,226 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}]
+2021-12-10 10:07:21,226 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-10 10:07:30,006 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:07:30,023 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:07:30,023 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:07:40,003 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-10 10:07:40,010 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}]
+2021-12-10 10:07:40,011 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-10 10:07:40,014 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:07:40,023 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:07:40,023 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:07:50,010 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:07:50,024 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:07:50,025 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:08:00,001 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:08:00,015 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:08:00,015 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:08:00,015 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-10 10:08:00,017 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}]
+2021-12-10 10:08:00,017 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-10 10:08:10,011 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:08:10,019 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:08:10,019 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:08:20,005 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:08:20,017 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:08:20,017 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:08:20,017 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-10 10:08:20,019 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}]
+2021-12-10 10:08:20,019 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-10 10:08:30,008 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:08:30,018 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:08:30,018 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:08:40,012 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:08:40,025 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:08:40,025 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:08:40,026 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-10 10:08:40,028 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}]
+2021-12-10 10:08:40,028 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-10 10:08:50,014 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:08:50,034 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:08:50,034 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:09:00,013 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:09:00,025 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:09:00,025 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:09:00,025 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-10 10:09:00,028 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}]
+2021-12-10 10:09:00,028 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-10 10:09:10,016 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:09:10,027 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:09:10,027 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:09:20,003 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:09:20,016 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:09:20,017 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:09:20,017 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-10 10:09:20,019 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}]
+2021-12-10 10:09:20,019 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-10 10:09:30,013 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:09:30,026 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:09:30,026 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:09:40,006 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-10 10:09:40,013 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}]
+2021-12-10 10:09:40,014 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-10 10:09:40,018 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:09:40,025 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:09:40,025 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:09:50,003 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:09:50,017 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:09:50,017 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:10:00,011 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-10 10:10:00,017 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}]
+2021-12-10 10:10:00,017 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-10 10:10:00,018 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:10:00,025 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:10:00,025 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:10:10,012 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:10:10,025 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:10:10,025 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:10:20,004 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-10 10:10:20,009 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}]
+2021-12-10 10:10:20,009 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-10 10:10:20,013 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:10:20,023 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:10:20,023 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:10:30,002 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:10:30,015 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:10:30,015 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:10:40,014 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:10:40,026 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:10:40,026 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:10:40,026 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-10 10:10:40,028 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}]
+2021-12-10 10:10:40,028 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-10 10:10:50,006 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:10:50,018 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:10:50,018 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:11:00,006 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:11:00,016 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:11:00,016 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:11:00,016 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-10 10:11:00,018 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}]
+2021-12-10 10:11:00,018 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-10 10:11:10,001 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:11:10,022 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:11:10,022 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:11:20,000 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-10 10:11:20,006 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}]
+2021-12-10 10:11:20,006 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-10 10:11:20,010 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:11:20,032 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:11:20,032 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:11:30,014 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:11:30,022 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:11:30,022 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:11:40,015 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-10 10:11:40,021 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}]
+2021-12-10 10:11:40,021 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-10 10:11:40,025 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:11:40,061 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:11:40,061 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:11:50,015 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:11:50,026 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:11:50,026 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:12:00,013 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-10 10:12:00,019 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}]
+2021-12-10 10:12:00,019 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-10 10:12:00,020 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:12:00,028 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:12:00,028 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:12:10,002 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:12:10,013 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:12:10,013 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:12:20,012 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:12:20,026 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:12:20,026 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:12:20,027 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-10 10:12:20,028 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}]
+2021-12-10 10:12:20,028 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-10 10:12:30,004 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:12:30,012 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:12:30,012 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:12:40,015 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:12:40,027 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:12:40,027 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:12:40,027 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-10 10:12:40,030 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}]
+2021-12-10 10:12:40,030 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-10 10:12:50,004 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:12:50,010 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:12:50,011 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:13:00,011 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-10 10:13:00,016 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}]
+2021-12-10 10:13:00,016 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-10 10:13:00,018 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:13:00,026 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:13:00,026 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:13:10,010 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:13:10,022 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:13:10,022 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:13:20,012 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-10 10:13:20,018 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}]
+2021-12-10 10:13:20,019 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-10 10:13:20,020 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:13:20,028 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:13:20,028 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:13:30,008 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:13:30,020 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:13:30,020 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:13:40,009 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:13:40,020 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:13:40,020 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:13:40,020 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-10 10:13:40,022 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}]
+2021-12-10 10:13:40,022 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-10 10:13:50,003 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:13:50,015 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:13:50,015 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:14:00,009 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:14:00,020 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:14:00,020 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:14:00,020 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-10 10:14:00,022 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}]
+2021-12-10 10:14:00,022 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-10 10:14:10,012 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:14:10,023 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:14:10,023 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:14:20,012 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:14:20,024 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:14:20,024 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:14:20,024 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-10 10:14:20,026 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}]
+2021-12-10 10:14:20,026 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-10 10:14:30,012 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:14:30,023 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:14:30,024 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:14:40,009 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-10 10:14:40,014 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}]
+2021-12-10 10:14:40,014 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-10 10:14:40,015 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:14:40,022 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:14:40,023 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:14:50,015 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:14:50,029 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:14:50,029 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:15:00,012 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:15:00,020 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:15:00,020 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:15:00,020 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-10 10:15:00,022 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}]
+2021-12-10 10:15:00,022 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-10 10:15:10,005 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:15:10,018 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:15:10,018 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:15:20,001 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:15:20,011 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:15:20,012 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:15:20,012 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-10 10:15:20,014 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}]
+2021-12-10 10:15:20,014 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-10 10:15:30,008 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:15:30,020 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:15:30,020 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:15:40,005 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-10 10:15:40,009 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}]
+2021-12-10 10:15:40,009 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-10 10:15:40,012 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:15:40,023 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:15:40,023 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:15:50,004 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:15:50,013 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:15:50,013 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:16:00,000 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-10 10:16:00,001 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}]
+2021-12-10 10:16:00,002 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-10 10:16:00,003 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:16:00,011 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:16:00,011 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:16:10,002 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:16:10,009 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:16:10,009 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:16:20,009 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:16:20,017 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:16:20,017 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:16:20,017 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-10 10:16:20,019 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}]
+2021-12-10 10:16:20,019 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-10 10:16:30,007 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:16:30,018 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:16:30,018 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:16:40,007 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:16:40,014 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:16:40,014 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:16:40,014 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-10 10:16:40,016 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}]
+2021-12-10 10:16:40,016 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-10 10:16:50,016 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:16:50,028 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:16:50,028 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:17:00,001 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-10 10:17:00,003 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}]
+2021-12-10 10:17:00,003 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-10 10:17:00,005 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:17:00,012 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:17:00,012 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:17:10,004 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:17:10,017 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:17:10,017 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:17:20,003 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:17:20,014 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:17:20,014 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:17:20,014 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-10 10:17:20,016 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}]
+2021-12-10 10:17:20,017 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-10 10:17:30,002 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:17:30,013 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:17:30,013 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:17:40,010 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 10:17:40,031 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 10:17:40,031 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 10:17:40,031 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-10 10:17:40,033 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}]
+2021-12-10 10:17:40,033 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-10 11:07:31,262 INFO  [background-preinit] Version: HV000001: Hibernate Validator 6.0.13.Final
+2021-12-10 11:07:31,266 INFO  [main] SpringbootApplication: Starting SpringbootApplication using Java 1.8.0_131 on DESKTOP-UCTQGUL with PID 20892 (G:\springboot-demo\target\classes started by CCH in G:\springboot-demo)
+2021-12-10 11:07:31,266 INFO  [main] SpringbootApplication: The following profiles are active: test
+2021-12-10 11:07:32,767 INFO  [main] TomcatWebServer: Tomcat initialized with port(s): 8082 (http)
+2021-12-10 11:07:32,777 INFO  [main] Http11NioProtocol: Initializing ProtocolHandler ["http-nio-8082"]
+2021-12-10 11:07:32,777 INFO  [main] StandardService: Starting service [Tomcat]
+2021-12-10 11:07:32,777 INFO  [main] StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-10 11:07:32,778 INFO  [main] AprLifecycleListener: An older version [1.2.25] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2021-12-10 11:07:32,778 INFO  [main] AprLifecycleListener: Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-10 11:07:32,778 INFO  [main] AprLifecycleListener: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2021-12-10 11:07:32,778 INFO  [main] AprLifecycleListener: APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-10 11:07:32,781 INFO  [main] AprLifecycleListener: OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-10 11:07:32,903 INFO  [main] [/]: Initializing Spring embedded WebApplicationContext
+2021-12-10 11:07:32,903 INFO  [main] ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1580 ms
+2021-12-10 11:07:33,695 INFO  [main] PropertySourcedRequestMappingHandlerMapping: Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-12-10 11:07:33,982 INFO  [main] Http11NioProtocol: Starting ProtocolHandler ["http-nio-8082"]
+2021-12-10 11:07:33,997 INFO  [main] TomcatWebServer: Tomcat started on port(s): 8082 (http) with context path ''
+2021-12-10 11:07:33,998 INFO  [main] DocumentationPluginsBootstrapper: Context refreshed
+2021-12-10 11:07:34,019 INFO  [main] DocumentationPluginsBootstrapper: Found 1 custom documentation plugin(s)
+2021-12-10 11:07:34,043 INFO  [main] ApiListingReferenceScanner: Scanning for api listing references
+2021-12-10 11:07:34,213 INFO  [main] SpringbootApplication: Started SpringbootApplication in 3.402 seconds (JVM running for 3.819)
+2021-12-10 11:07:40,011 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 11:07:40,422 INFO  [http-nio-8082-exec-1] [/]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-10 11:07:40,423 INFO  [http-nio-8082-exec-1] DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+2021-12-10 11:07:40,423 INFO  [http-nio-8082-exec-1] DispatcherServlet: Completed initialization in 0 ms
+2021-12-10 11:07:40,531 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 11:07:40,531 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 11:07:50,002 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 11:07:50,017 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 11:07:50,017 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 11:08:00,013 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-10 11:08:00,034 INFO  [scheduling-1] HikariDataSource: HikariPool-1 - Starting...
+2021-12-10 11:08:00,148 INFO  [scheduling-1] PoolBase: HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2021-12-10 11:08:00,151 INFO  [scheduling-1] HikariDataSource: HikariPool-1 - Start completed.
+2021-12-10 11:08:00,355 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=202154321001, PAYENDTIME=20211101, BID=bill2, CREATETIME=2021-11-09 13:34:09.0, TYPE=0, CID=202154321001}, {EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}, {EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=202154321003, PAYENDTIME=20211101, BID=bill1, CREATETIME=2021-11-09 13:34:37.0, TYPE=0, CID=202154321003}]
+2021-12-10 11:08:00,355 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：202154321001,支付金额：3000,账单号：bill2
+2021-12-10 11:08:00,369 INFO  [scheduling-1] ScheduledService: 合同号：202154321001在流水表核账金额：3000
+2021-12-10 11:08:00,369 INFO  [scheduling-1] ScheduledService: 合同号：202154321001核账成功
+2021-12-10 11:08:00,369 INFO  [scheduling-1] ScheduledService: ==========发送请求给住建局，应收单据回调接口开始==========
+2021-12-10 11:08:00,369 INFO  [scheduling-1] ScheduledService: POST请求头{x-auth-token=woshiyigetoken, x-app-auth=dlfcApponI4vHNN}
+2021-12-10 11:08:00,372 INFO  [scheduling-1] ScheduledService: 流水表取得的数据[Tranlog(accountnumber=621081060001, contract=202154321001, paytime=20211103, payamount=1000, status=null, serialnumber=005), Tranlog(accountnumber=621081060001, contract=202154321001, paytime=20211102, payamount=1000, status=null, serialnumber=004), Tranlog(accountnumber=621081060001, contract=202154321001, paytime=20211101, payamount=1000, status=null, serialnumber=003)]
+2021-12-10 11:08:00,372 INFO  [scheduling-1] ScheduledService: POST请求体{serialbigDecimal=005, payTime=20211103, remark=null, bid=bill2, payStatus=1}
+2021-12-10 11:08:00,420 ERROR [scheduling-1] HttpClientUtil: 向住建局发请求情况正常，请求返回体为：HttpResponseProxy{HTTP/1.1 200  [Content-Type: application/json, Transfer-Encoding: chunked, Date: Fri, 10 Dec 2021 03:08:00 GMT, Keep-Alive: timeout=60, Connection: keep-alive] ResponseEntityProxy{[Content-Type: application/json,Chunked: true]}}
+2021-12-10 11:08:00,422 INFO  [scheduling-1] ScheduledService: {data={status=1.0}, message=成功, status=200.0}
+2021-12-10 11:08:00,423 INFO  [scheduling-1] ScheduledService: 住建局返回内容status字段：200.0
+2021-12-10 11:08:00,424 INFO  [scheduling-1] ScheduledService: 应收单据表合同号：202154321001状态已修改
+2021-12-10 11:08:00,425 INFO  [scheduling-1] ScheduledService: 流水表合同号：202154321001状态已修改
+2021-12-10 11:08:00,427 INFO  [scheduling-1] ScheduledTask: 第1条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-10 11:08:00,428 INFO  [scheduling-1] ScheduledTask: 第2条应收单据核账开始,合同备案号：202154321003,支付金额：3000,账单号：bill1
+2021-12-10 11:08:00,429 INFO  [scheduling-1] ScheduledService: 合同号：202154321003在流水表核账金额：3000
+2021-12-10 11:08:00,429 INFO  [scheduling-1] ScheduledService: 合同号：202154321003核账成功
+2021-12-10 11:08:00,429 INFO  [scheduling-1] ScheduledService: ==========发送请求给住建局，应收单据回调接口开始==========
+2021-12-10 11:08:00,429 INFO  [scheduling-1] ScheduledService: POST请求头{x-auth-token=woshiyigetoken, x-app-auth=dlfcApponI4vHNN}
+2021-12-10 11:08:00,431 INFO  [scheduling-1] ScheduledService: 流水表取得的数据[Tranlog(accountnumber=621081060001, contract=202154321003, paytime=20211105, payamount=2000, status=null, serialnumber=001), Tranlog(accountnumber=621081060001, contract=202154321003, paytime=2021106, payamount=1000, status=null, serialnumber=002)]
+2021-12-10 11:08:00,431 INFO  [scheduling-1] ScheduledService: POST请求体{serialbigDecimal=001, payTime=20211105, remark=null, bid=bill1, payStatus=1}
+2021-12-10 11:08:00,436 ERROR [scheduling-1] HttpClientUtil: 向住建局发请求情况正常，请求返回体为：HttpResponseProxy{HTTP/1.1 200  [Content-Type: application/json, Transfer-Encoding: chunked, Date: Fri, 10 Dec 2021 03:08:00 GMT, Keep-Alive: timeout=60, Connection: keep-alive] ResponseEntityProxy{[Content-Type: application/json,Chunked: true]}}
+2021-12-10 11:08:00,437 INFO  [scheduling-1] ScheduledService: {data={status=1.0}, message=成功, status=200.0}
+2021-12-10 11:08:00,437 INFO  [scheduling-1] ScheduledService: 住建局返回内容status字段：200.0
+2021-12-10 11:08:00,438 INFO  [scheduling-1] ScheduledService: 应收单据表合同号：202154321003状态已修改
+2021-12-10 11:08:00,440 INFO  [scheduling-1] ScheduledService: 流水表合同号：202154321003状态已修改
+2021-12-10 11:08:00,441 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 11:08:00,449 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 11:08:00,449 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 11:08:10,003 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 11:08:10,012 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 11:08:10,012 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 11:08:20,016 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 11:08:20,025 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 11:08:20,025 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 11:08:30,013 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-10 11:08:30,019 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}]
+2021-12-10 11:08:30,020 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-10 11:08:30,024 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 11:08:30,037 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 11:08:30,037 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-10 11:08:40,009 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-10 11:08:40,024 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-10 11:08:40,024 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken

@@ -1,0 +1,945 @@
+2021-12-02 09:12:13,747 WARN  [HikariPool-1 housekeeper] HikariPool: HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13h47m11s369ms388µs600ns).
+2021-12-02 09:23:01,898 INFO  [background-preinit] Version: HV000001: Hibernate Validator 6.0.13.Final
+2021-12-02 09:23:01,906 INFO  [main] SpringbootApplication: Starting SpringbootApplication using Java 1.8.0_131 on DESKTOP-UCTQGUL with PID 20296 (G:\springboot-demo\target\classes started by CCH in G:\springboot-demo)
+2021-12-02 09:23:01,907 INFO  [main] SpringbootApplication: No active profile set, falling back to default profiles: default
+2021-12-02 09:23:03,641 INFO  [main] TomcatWebServer: Tomcat initialized with port(s): 8082 (http)
+2021-12-02 09:23:03,652 INFO  [main] Http11NioProtocol: Initializing ProtocolHandler ["http-nio-8082"]
+2021-12-02 09:23:03,653 INFO  [main] StandardService: Starting service [Tomcat]
+2021-12-02 09:23:03,653 INFO  [main] StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-02 09:23:03,654 INFO  [main] AprLifecycleListener: An older version [1.2.25] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2021-12-02 09:23:03,654 INFO  [main] AprLifecycleListener: Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-02 09:23:03,654 INFO  [main] AprLifecycleListener: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2021-12-02 09:23:03,654 INFO  [main] AprLifecycleListener: APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-02 09:23:03,660 INFO  [main] AprLifecycleListener: OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-02 09:23:03,850 INFO  [main] [/]: Initializing Spring embedded WebApplicationContext
+2021-12-02 09:23:03,850 INFO  [main] ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1897 ms
+2021-12-02 09:23:04,745 INFO  [main] PropertySourcedRequestMappingHandlerMapping: Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-12-02 09:23:05,045 INFO  [main] Http11NioProtocol: Starting ProtocolHandler ["http-nio-8082"]
+2021-12-02 09:23:05,062 INFO  [main] TomcatWebServer: Tomcat started on port(s): 8082 (http) with context path ''
+2021-12-02 09:23:05,062 INFO  [main] DocumentationPluginsBootstrapper: Context refreshed
+2021-12-02 09:23:05,143 INFO  [main] DocumentationPluginsBootstrapper: Found 1 custom documentation plugin(s)
+2021-12-02 09:23:05,169 INFO  [main] ApiListingReferenceScanner: Scanning for api listing references
+2021-12-02 09:23:05,332 INFO  [main] SpringbootApplication: Started SpringbootApplication in 3.879 seconds (JVM running for 4.402)
+2021-12-02 09:23:25,047 INFO  [http-nio-8082-exec-1] [/]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-02 09:23:25,047 INFO  [http-nio-8082-exec-1] DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+2021-12-02 09:23:25,048 INFO  [http-nio-8082-exec-1] DispatcherServlet: Completed initialization in 1 ms
+2021-12-02 09:23:25,161 INFO  [http-nio-8082-exec-1] HikariDataSource: HikariPool-1 - Starting...
+2021-12-02 09:23:25,316 INFO  [http-nio-8082-exec-1] PoolBase: HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2021-12-02 09:23:25,319 INFO  [http-nio-8082-exec-1] HikariDataSource: HikariPool-1 - Start completed.
+2021-12-02 09:23:25,415 INFO  [http-nio-8082-exec-1] AccountController: 账户库里已存在
+2021-12-02 09:23:25,417 INFO  [http-nio-8082-exec-1] AccountController: 01
+2021-12-02 09:23:25,417 INFO  [http-nio-8082-exec-1] AccountController: youshu
+2021-12-02 09:23:25,417 INFO  [http-nio-8082-exec-1] AccountController: 签约成功
+2021-12-02 09:33:00,954 INFO  [background-preinit] Version: HV000001: Hibernate Validator 6.0.13.Final
+2021-12-02 09:33:00,961 INFO  [main] SpringbootApplication: Starting SpringbootApplication using Java 1.8.0_131 on DESKTOP-UCTQGUL with PID 22772 (G:\springboot-demo\target\classes started by CCH in G:\springboot-demo)
+2021-12-02 09:33:00,961 INFO  [main] SpringbootApplication: No active profile set, falling back to default profiles: default
+2021-12-02 09:33:02,440 INFO  [main] TomcatWebServer: Tomcat initialized with port(s): 8082 (http)
+2021-12-02 09:33:02,450 INFO  [main] Http11NioProtocol: Initializing ProtocolHandler ["http-nio-8082"]
+2021-12-02 09:33:02,450 INFO  [main] StandardService: Starting service [Tomcat]
+2021-12-02 09:33:02,450 INFO  [main] StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-02 09:33:02,451 INFO  [main] AprLifecycleListener: An older version [1.2.25] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2021-12-02 09:33:02,451 INFO  [main] AprLifecycleListener: Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-02 09:33:02,451 INFO  [main] AprLifecycleListener: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2021-12-02 09:33:02,451 INFO  [main] AprLifecycleListener: APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-02 09:33:02,454 INFO  [main] AprLifecycleListener: OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-02 09:33:02,594 INFO  [main] [/]: Initializing Spring embedded WebApplicationContext
+2021-12-02 09:33:02,594 INFO  [main] ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1578 ms
+2021-12-02 09:33:03,390 INFO  [main] PropertySourcedRequestMappingHandlerMapping: Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-12-02 09:33:03,686 INFO  [main] Http11NioProtocol: Starting ProtocolHandler ["http-nio-8082"]
+2021-12-02 09:33:03,703 INFO  [main] TomcatWebServer: Tomcat started on port(s): 8082 (http) with context path ''
+2021-12-02 09:33:03,703 INFO  [main] DocumentationPluginsBootstrapper: Context refreshed
+2021-12-02 09:33:03,727 INFO  [main] DocumentationPluginsBootstrapper: Found 1 custom documentation plugin(s)
+2021-12-02 09:33:03,754 INFO  [main] ApiListingReferenceScanner: Scanning for api listing references
+2021-12-02 09:33:03,913 INFO  [main] SpringbootApplication: Started SpringbootApplication in 3.399 seconds (JVM running for 3.797)
+2021-12-02 09:36:38,019 INFO  [background-preinit] Version: HV000001: Hibernate Validator 6.0.13.Final
+2021-12-02 09:36:38,022 INFO  [main] SpringbootApplication: Starting SpringbootApplication using Java 1.8.0_131 on DESKTOP-UCTQGUL with PID 23184 (G:\springboot-demo\target\classes started by CCH in G:\springboot-demo)
+2021-12-02 09:36:38,023 INFO  [main] SpringbootApplication: No active profile set, falling back to default profiles: default
+2021-12-02 09:36:39,540 INFO  [main] TomcatWebServer: Tomcat initialized with port(s): 8082 (http)
+2021-12-02 09:36:39,550 INFO  [main] Http11NioProtocol: Initializing ProtocolHandler ["http-nio-8082"]
+2021-12-02 09:36:39,550 INFO  [main] StandardService: Starting service [Tomcat]
+2021-12-02 09:36:39,550 INFO  [main] StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-02 09:36:39,551 INFO  [main] AprLifecycleListener: An older version [1.2.25] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2021-12-02 09:36:39,551 INFO  [main] AprLifecycleListener: Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-02 09:36:39,551 INFO  [main] AprLifecycleListener: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2021-12-02 09:36:39,551 INFO  [main] AprLifecycleListener: APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-02 09:36:39,554 INFO  [main] AprLifecycleListener: OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-02 09:36:39,681 INFO  [main] [/]: Initializing Spring embedded WebApplicationContext
+2021-12-02 09:36:39,682 INFO  [main] ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1612 ms
+2021-12-02 09:36:39,817 WARN  [main] AnnotationConfigServletWebServerApplicationContext: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'accountMapper' defined in file [G:\springboot-demo\target\classes\com\cch\demo\account\mapper\AccountMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2021-12-02 09:36:39,819 INFO  [main] StandardService: Stopping service [Tomcat]
+2021-12-02 09:36:39,981 ERROR [main] LoggingFailureAnalysisReporter: 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2021-12-02 09:36:49,276 INFO  [background-preinit] Version: HV000001: Hibernate Validator 6.0.13.Final
+2021-12-02 09:36:49,284 INFO  [main] SpringbootApplication: Starting SpringbootApplication using Java 1.8.0_131 on DESKTOP-UCTQGUL with PID 23160 (G:\springboot-demo\target\classes started by CCH in G:\springboot-demo)
+2021-12-02 09:36:49,284 INFO  [main] SpringbootApplication: No active profile set, falling back to default profiles: default
+2021-12-02 09:36:50,830 INFO  [main] TomcatWebServer: Tomcat initialized with port(s): 8082 (http)
+2021-12-02 09:36:50,840 INFO  [main] Http11NioProtocol: Initializing ProtocolHandler ["http-nio-8082"]
+2021-12-02 09:36:50,841 INFO  [main] StandardService: Starting service [Tomcat]
+2021-12-02 09:36:50,841 INFO  [main] StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-02 09:36:50,842 INFO  [main] AprLifecycleListener: An older version [1.2.25] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2021-12-02 09:36:50,842 INFO  [main] AprLifecycleListener: Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-02 09:36:50,842 INFO  [main] AprLifecycleListener: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2021-12-02 09:36:50,843 INFO  [main] AprLifecycleListener: APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-02 09:36:50,845 INFO  [main] AprLifecycleListener: OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-02 09:36:50,974 INFO  [main] [/]: Initializing Spring embedded WebApplicationContext
+2021-12-02 09:36:50,974 INFO  [main] ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1641 ms
+2021-12-02 09:36:51,114 WARN  [main] AnnotationConfigServletWebServerApplicationContext: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'accountMapper' defined in file [G:\springboot-demo\target\classes\com\cch\demo\account\mapper\AccountMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2021-12-02 09:36:51,116 INFO  [main] StandardService: Stopping service [Tomcat]
+2021-12-02 09:36:51,184 ERROR [main] LoggingFailureAnalysisReporter: 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2021-12-02 09:38:18,730 INFO  [background-preinit] Version: HV000001: Hibernate Validator 6.0.13.Final
+2021-12-02 09:38:18,740 INFO  [main] SpringbootApplication: Starting SpringbootApplication using Java 1.8.0_131 on DESKTOP-UCTQGUL with PID 7068 (G:\springboot-demo\target\classes started by CCH in G:\springboot-demo)
+2021-12-02 09:38:18,741 INFO  [main] SpringbootApplication: No active profile set, falling back to default profiles: default
+2021-12-02 09:38:20,312 INFO  [main] TomcatWebServer: Tomcat initialized with port(s): 8082 (http)
+2021-12-02 09:38:20,321 INFO  [main] Http11NioProtocol: Initializing ProtocolHandler ["http-nio-8082"]
+2021-12-02 09:38:20,322 INFO  [main] StandardService: Starting service [Tomcat]
+2021-12-02 09:38:20,322 INFO  [main] StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-02 09:38:20,323 INFO  [main] AprLifecycleListener: An older version [1.2.25] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2021-12-02 09:38:20,323 INFO  [main] AprLifecycleListener: Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-02 09:38:20,323 INFO  [main] AprLifecycleListener: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2021-12-02 09:38:20,323 INFO  [main] AprLifecycleListener: APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-02 09:38:20,325 INFO  [main] AprLifecycleListener: OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-02 09:38:20,454 INFO  [main] [/]: Initializing Spring embedded WebApplicationContext
+2021-12-02 09:38:20,454 INFO  [main] ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1663 ms
+2021-12-02 09:38:20,593 WARN  [main] AnnotationConfigServletWebServerApplicationContext: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'accountMapper' defined in file [G:\springboot-demo\target\classes\com\cch\demo\account\mapper\AccountMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2021-12-02 09:38:20,595 INFO  [main] StandardService: Stopping service [Tomcat]
+2021-12-02 09:38:20,665 ERROR [main] LoggingFailureAnalysisReporter: 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2021-12-02 09:39:30,223 INFO  [background-preinit] Version: HV000001: Hibernate Validator 6.0.13.Final
+2021-12-02 09:39:30,230 INFO  [main] SpringbootApplication: Starting SpringbootApplication using Java 1.8.0_131 on DESKTOP-UCTQGUL with PID 7164 (G:\springboot-demo\target\classes started by CCH in G:\springboot-demo)
+2021-12-02 09:39:30,230 INFO  [main] SpringbootApplication: No active profile set, falling back to default profiles: default
+2021-12-02 09:39:31,768 INFO  [main] TomcatWebServer: Tomcat initialized with port(s): 8082 (http)
+2021-12-02 09:39:31,778 INFO  [main] Http11NioProtocol: Initializing ProtocolHandler ["http-nio-8082"]
+2021-12-02 09:39:31,778 INFO  [main] StandardService: Starting service [Tomcat]
+2021-12-02 09:39:31,778 INFO  [main] StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-02 09:39:31,779 INFO  [main] AprLifecycleListener: An older version [1.2.25] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2021-12-02 09:39:31,780 INFO  [main] AprLifecycleListener: Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-02 09:39:31,780 INFO  [main] AprLifecycleListener: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2021-12-02 09:39:31,780 INFO  [main] AprLifecycleListener: APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-02 09:39:31,782 INFO  [main] AprLifecycleListener: OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-02 09:39:31,909 INFO  [main] [/]: Initializing Spring embedded WebApplicationContext
+2021-12-02 09:39:31,909 INFO  [main] ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1628 ms
+2021-12-02 09:39:32,032 WARN  [main] AnnotationConfigServletWebServerApplicationContext: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'accountMapper' defined in file [G:\springboot-demo\target\classes\com\cch\demo\account\mapper\AccountMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2021-12-02 09:39:32,035 INFO  [main] StandardService: Stopping service [Tomcat]
+2021-12-02 09:39:32,106 ERROR [main] LoggingFailureAnalysisReporter: 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2021-12-02 09:40:39,571 INFO  [background-preinit] Version: HV000001: Hibernate Validator 6.0.13.Final
+2021-12-02 09:40:39,574 INFO  [main] SpringbootApplication: Starting SpringbootApplication using Java 1.8.0_131 on DESKTOP-UCTQGUL with PID 22936 (G:\springboot-demo\target\classes started by CCH in G:\springboot-demo)
+2021-12-02 09:40:39,575 INFO  [main] SpringbootApplication: The following profiles are active: test
+2021-12-02 09:40:41,149 INFO  [main] TomcatWebServer: Tomcat initialized with port(s): 8082 (http)
+2021-12-02 09:40:41,158 INFO  [main] Http11NioProtocol: Initializing ProtocolHandler ["http-nio-8082"]
+2021-12-02 09:40:41,159 INFO  [main] StandardService: Starting service [Tomcat]
+2021-12-02 09:40:41,159 INFO  [main] StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-02 09:40:41,160 INFO  [main] AprLifecycleListener: An older version [1.2.25] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2021-12-02 09:40:41,160 INFO  [main] AprLifecycleListener: Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-02 09:40:41,160 INFO  [main] AprLifecycleListener: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2021-12-02 09:40:41,160 INFO  [main] AprLifecycleListener: APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-02 09:40:41,162 INFO  [main] AprLifecycleListener: OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-02 09:40:41,288 INFO  [main] [/]: Initializing Spring embedded WebApplicationContext
+2021-12-02 09:40:41,288 INFO  [main] ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1663 ms
+2021-12-02 09:40:42,073 INFO  [main] PropertySourcedRequestMappingHandlerMapping: Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-12-02 09:40:42,364 INFO  [main] Http11NioProtocol: Starting ProtocolHandler ["http-nio-8082"]
+2021-12-02 09:40:42,378 INFO  [main] TomcatWebServer: Tomcat started on port(s): 8082 (http) with context path ''
+2021-12-02 09:40:42,378 INFO  [main] DocumentationPluginsBootstrapper: Context refreshed
+2021-12-02 09:40:42,398 INFO  [main] DocumentationPluginsBootstrapper: Found 1 custom documentation plugin(s)
+2021-12-02 09:40:42,427 INFO  [main] ApiListingReferenceScanner: Scanning for api listing references
+2021-12-02 09:40:42,590 INFO  [main] SpringbootApplication: Started SpringbootApplication in 3.488 seconds (JVM running for 3.906)
+2021-12-02 09:41:11,870 INFO  [background-preinit] Version: HV000001: Hibernate Validator 6.0.13.Final
+2021-12-02 09:41:11,878 INFO  [main] SpringbootApplication: Starting SpringbootApplication using Java 1.8.0_131 on DESKTOP-UCTQGUL with PID 18148 (G:\springboot-demo\target\classes started by CCH in G:\springboot-demo)
+2021-12-02 09:41:11,878 INFO  [main] SpringbootApplication: The following profiles are active: test
+2021-12-02 09:41:13,452 INFO  [main] TomcatWebServer: Tomcat initialized with port(s): 8082 (http)
+2021-12-02 09:41:13,462 INFO  [main] Http11NioProtocol: Initializing ProtocolHandler ["http-nio-8082"]
+2021-12-02 09:41:13,462 INFO  [main] StandardService: Starting service [Tomcat]
+2021-12-02 09:41:13,462 INFO  [main] StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-02 09:41:13,463 INFO  [main] AprLifecycleListener: An older version [1.2.25] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2021-12-02 09:41:13,464 INFO  [main] AprLifecycleListener: Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-02 09:41:13,464 INFO  [main] AprLifecycleListener: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2021-12-02 09:41:13,464 INFO  [main] AprLifecycleListener: APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-02 09:41:13,466 INFO  [main] AprLifecycleListener: OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-02 09:41:13,592 INFO  [main] [/]: Initializing Spring embedded WebApplicationContext
+2021-12-02 09:41:13,592 INFO  [main] ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1660 ms
+2021-12-02 09:41:14,382 INFO  [main] PropertySourcedRequestMappingHandlerMapping: Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-12-02 09:41:14,667 INFO  [main] Http11NioProtocol: Starting ProtocolHandler ["http-nio-8082"]
+2021-12-02 09:41:14,682 INFO  [main] TomcatWebServer: Tomcat started on port(s): 8082 (http) with context path ''
+2021-12-02 09:41:14,683 INFO  [main] DocumentationPluginsBootstrapper: Context refreshed
+2021-12-02 09:41:14,704 INFO  [main] DocumentationPluginsBootstrapper: Found 1 custom documentation plugin(s)
+2021-12-02 09:41:14,731 INFO  [main] ApiListingReferenceScanner: Scanning for api listing references
+2021-12-02 09:41:14,878 INFO  [main] SpringbootApplication: Started SpringbootApplication in 3.428 seconds (JVM running for 3.837)
+2021-12-02 11:19:49,555 INFO  [background-preinit] Version: HV000001: Hibernate Validator 6.0.13.Final
+2021-12-02 11:19:49,569 INFO  [main] SpringbootApplication: Starting SpringbootApplication using Java 1.8.0_131 on DESKTOP-UCTQGUL with PID 18452 (G:\springboot-demo\target\classes started by CCH in G:\springboot-demo)
+2021-12-02 11:19:49,569 INFO  [main] SpringbootApplication: The following profiles are active: test
+2021-12-02 11:19:51,124 INFO  [main] TomcatWebServer: Tomcat initialized with port(s): 8082 (http)
+2021-12-02 11:19:51,134 INFO  [main] Http11NioProtocol: Initializing ProtocolHandler ["http-nio-8082"]
+2021-12-02 11:19:51,134 INFO  [main] StandardService: Starting service [Tomcat]
+2021-12-02 11:19:51,134 INFO  [main] StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-02 11:19:51,135 INFO  [main] AprLifecycleListener: An older version [1.2.25] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2021-12-02 11:19:51,135 INFO  [main] AprLifecycleListener: Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-02 11:19:51,135 INFO  [main] AprLifecycleListener: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2021-12-02 11:19:51,136 INFO  [main] AprLifecycleListener: APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-02 11:19:51,138 INFO  [main] AprLifecycleListener: OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-02 11:19:51,271 INFO  [main] [/]: Initializing Spring embedded WebApplicationContext
+2021-12-02 11:19:51,271 INFO  [main] ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1655 ms
+2021-12-02 11:19:52,107 INFO  [main] PropertySourcedRequestMappingHandlerMapping: Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-12-02 11:19:52,421 INFO  [main] Http11NioProtocol: Starting ProtocolHandler ["http-nio-8082"]
+2021-12-02 11:19:52,435 INFO  [main] TomcatWebServer: Tomcat started on port(s): 8082 (http) with context path ''
+2021-12-02 11:19:52,436 INFO  [main] DocumentationPluginsBootstrapper: Context refreshed
+2021-12-02 11:19:52,456 INFO  [main] DocumentationPluginsBootstrapper: Found 1 custom documentation plugin(s)
+2021-12-02 11:19:52,478 INFO  [main] ApiListingReferenceScanner: Scanning for api listing references
+2021-12-02 11:19:52,629 INFO  [main] SpringbootApplication: Started SpringbootApplication in 3.488 seconds (JVM running for 3.903)
+2021-12-02 11:20:50,876 INFO  [http-nio-8082-exec-1] [/]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-02 11:20:50,876 INFO  [http-nio-8082-exec-1] DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+2021-12-02 11:20:50,877 INFO  [http-nio-8082-exec-1] DispatcherServlet: Completed initialization in 1 ms
+2021-12-02 11:21:23,010 INFO  [http-nio-8082-exec-8] HikariDataSource: HikariPool-1 - Starting...
+2021-12-02 11:21:23,137 INFO  [http-nio-8082-exec-8] PoolBase: HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2021-12-02 11:21:23,141 INFO  [http-nio-8082-exec-8] HikariDataSource: HikariPool-1 - Start completed.
+2021-12-02 11:21:23,258 INFO  [http-nio-8082-exec-8] GlobalFillMetaObjectHandler: start insert fill...
+2021-12-02 11:21:23,263 INFO  [http-nio-8082-exec-8] AccountController: 账户插库成功
+2021-12-02 11:21:23,265 INFO  [http-nio-8082-exec-8] AccountController: 签约成功
+2021-12-02 11:32:17,917 WARN  [HikariPool-1 housekeeper] HikariPool: HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m54s579ms170µs100ns).
+2021-12-02 12:20:49,267 WARN  [HikariPool-1 housekeeper] HikariPool: HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m30s804ms694µs).
+2021-12-02 12:21:25,323 INFO  [scheduling-1] ScheduledTask: 取token开始，给住建局发请求
+2021-12-02 12:21:25,811 INFO  [scheduling-1] HttpClientUtil: 向住建局发请求情况正常，住建局返回内容为：{"status":200,"message":"获取token成功","data":"woshiyigetoken"}
+2021-12-02 12:21:25,812 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-02 12:21:25,813 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-02 12:21:25,816 INFO  [scheduling-1] ScheduledTask: Checking[]
+2021-12-02 12:21:25,816 INFO  [scheduling-1] ScheduledTask: 核账开始
+2021-12-02 13:11:52,860 WARN  [HikariPool-1 housekeeper] HikariPool: HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m3s34ms517µs99ns).
+2021-12-02 13:19:33,017 INFO  [scheduling-1] ScheduledTask: 取token开始，给住建局发请求
+2021-12-02 13:19:33,041 INFO  [scheduling-1] HttpClientUtil: 向住建局发请求情况正常，住建局返回内容为：{"status":200,"message":"获取token成功","data":"woshiyigetoken"}
+2021-12-02 13:19:33,042 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-02 13:19:33,043 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-02 13:19:33,049 INFO  [scheduling-1] ScheduledTask: Checking[]
+2021-12-02 13:19:33,049 INFO  [scheduling-1] ScheduledTask: 核账开始
+2021-12-02 13:37:14,454 INFO  [background-preinit] Version: HV000001: Hibernate Validator 6.0.13.Final
+2021-12-02 13:37:14,462 INFO  [main] SpringbootApplication: Starting SpringbootApplication using Java 1.8.0_131 on DESKTOP-UCTQGUL with PID 20712 (G:\springboot-demo\target\classes started by CCH in G:\springboot-demo)
+2021-12-02 13:37:14,462 INFO  [main] SpringbootApplication: The following profiles are active: test
+2021-12-02 13:37:16,140 INFO  [main] TomcatWebServer: Tomcat initialized with port(s): 8082 (http)
+2021-12-02 13:37:16,150 INFO  [main] Http11NioProtocol: Initializing ProtocolHandler ["http-nio-8082"]
+2021-12-02 13:37:16,150 INFO  [main] StandardService: Starting service [Tomcat]
+2021-12-02 13:37:16,151 INFO  [main] StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-02 13:37:16,152 INFO  [main] AprLifecycleListener: An older version [1.2.25] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2021-12-02 13:37:16,152 INFO  [main] AprLifecycleListener: Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-02 13:37:16,152 INFO  [main] AprLifecycleListener: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2021-12-02 13:37:16,152 INFO  [main] AprLifecycleListener: APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-02 13:37:16,155 INFO  [main] AprLifecycleListener: OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-02 13:37:16,268 INFO  [main] [/]: Initializing Spring embedded WebApplicationContext
+2021-12-02 13:37:16,269 INFO  [main] ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1755 ms
+2021-12-02 13:37:17,077 INFO  [main] PropertySourcedRequestMappingHandlerMapping: Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-12-02 13:37:17,373 INFO  [main] Http11NioProtocol: Starting ProtocolHandler ["http-nio-8082"]
+2021-12-02 13:37:17,387 INFO  [main] TomcatWebServer: Tomcat started on port(s): 8082 (http) with context path ''
+2021-12-02 13:37:17,388 INFO  [main] DocumentationPluginsBootstrapper: Context refreshed
+2021-12-02 13:37:17,408 INFO  [main] DocumentationPluginsBootstrapper: Found 1 custom documentation plugin(s)
+2021-12-02 13:37:17,430 INFO  [main] ApiListingReferenceScanner: Scanning for api listing references
+2021-12-02 13:37:17,582 INFO  [main] SpringbootApplication: Started SpringbootApplication in 3.605 seconds (JVM running for 4.048)
+2021-12-02 13:37:26,760 INFO  [http-nio-8082-exec-1] [/]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-02 13:37:26,760 INFO  [http-nio-8082-exec-1] DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+2021-12-02 13:37:26,761 INFO  [http-nio-8082-exec-1] DispatcherServlet: Completed initialization in 1 ms
+2021-12-02 13:37:26,877 INFO  [http-nio-8082-exec-1] HikariDataSource: HikariPool-1 - Starting...
+2021-12-02 13:37:27,028 INFO  [http-nio-8082-exec-1] PoolBase: HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2021-12-02 13:37:27,032 INFO  [http-nio-8082-exec-1] HikariDataSource: HikariPool-1 - Start completed.
+2021-12-02 13:37:27,173 INFO  [http-nio-8082-exec-1] GlobalFillMetaObjectHandler: start insert fill...
+2021-12-02 13:37:27,178 INFO  [http-nio-8082-exec-1] AccountController: 账户插库成功
+2021-12-02 13:37:27,182 INFO  [http-nio-8082-exec-1] AccountController: 签约成功
+2021-12-02 13:38:00,010 INFO  [scheduling-1] ScheduledTask: ==========取token开始，给住建局发请求=========
+2021-12-02 13:38:00,498 INFO  [scheduling-1] HttpClientUtil: 向住建局发请求情况正常，住建局返回内容为：{"status":200,"message":"获取token成功","data":"woshiyigetoken"}
+2021-12-02 13:38:00,501 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-02 13:38:00,501 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-02 13:39:00,021 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{PAYMENTAMOUNT=3000, CREATETIME=2021-11-09 13:34:09.0, BID=bill2, CID=202154321001}, {PAYMENTAMOUNT=3000, CREATETIME=2021-11-09 13:34:37.0, BID=bill1, CID=202154321003}]
+2021-12-02 13:39:00,021 INFO  [scheduling-1] ScheduledTask: ==========核账开始==========
+2021-12-02 13:39:00,021 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同号：202154321001,支付金额：3000,账单号：bill2
+2021-12-02 13:39:00,118 INFO  [scheduling-1] ScheduledService: 合同号：202154321001在流水表核账金额：3000
+2021-12-02 13:39:00,118 INFO  [scheduling-1] ScheduledService: 合同号：202154321001核账成功
+2021-12-02 13:39:00,118 INFO  [scheduling-1] ScheduledService: ==========开始调用应收单据回调接口==========
+2021-12-02 13:39:00,118 INFO  [scheduling-1] ScheduledService: POST请求头{appId=123, token=woshiyigetoken}
+2021-12-02 13:39:00,121 INFO  [scheduling-1] ScheduledService: 流水表取得的数据[Tranlog(accountnumber=null, contract=null, paytime=20211103, payamount=null, status=null, serialnumber=005), Tranlog(accountnumber=null, contract=null, paytime=20211102, payamount=null, status=null, serialnumber=004), Tranlog(accountnumber=null, contract=null, paytime=20211101, payamount=null, status=null, serialnumber=003)]
+2021-12-02 13:39:00,121 INFO  [scheduling-1] ScheduledService: POST请求体{serialNumber=005, payTime=20211103, remark=null, payStatue=1, bid=bill2}
+2021-12-02 13:39:00,121 INFO  [scheduling-1] ScheduledService: ==========开始向住建局发回调接口请求==========
+2021-12-02 13:39:00,128 INFO  [scheduling-1] HttpClientUtil: 向住建局发请求情况正常，住建局返回内容为：{"status":200,"message":"成功","data":{"status":1}}
+2021-12-02 13:39:00,128 INFO  [scheduling-1] ScheduledService: 住建局返回内容status字段：{"status":200,"message":"成功","data":{"status":1}}
+2021-12-02 13:39:00,131 INFO  [scheduling-1] ScheduledService: {data={status=1.0}, message=成功, status=200.0}
+2021-12-02 13:39:00,131 INFO  [scheduling-1] ScheduledService: 住建局返回内容status字段：200.0
+2021-12-02 13:39:00,133 INFO  [scheduling-1] ScheduledService: 应收单据表合同号：202154321001状态已修改
+2021-12-02 13:39:00,134 INFO  [scheduling-1] ScheduledService: 流水表合同号：202154321001状态已修改
+2021-12-02 13:39:00,136 INFO  [scheduling-1] ScheduledTask: 第1条应收单据核账开始,合同号：202154321003,支付金额：3000,账单号：bill1
+2021-12-02 13:39:00,137 INFO  [scheduling-1] ScheduledService: 合同号：202154321003在流水表核账金额：3000
+2021-12-02 13:39:00,137 INFO  [scheduling-1] ScheduledService: 合同号：202154321003核账成功
+2021-12-02 13:39:00,137 INFO  [scheduling-1] ScheduledService: ==========开始调用应收单据回调接口==========
+2021-12-02 13:39:00,137 INFO  [scheduling-1] ScheduledService: POST请求头{appId=123, token=woshiyigetoken}
+2021-12-02 13:39:00,138 INFO  [scheduling-1] ScheduledService: 流水表取得的数据[Tranlog(accountnumber=null, contract=null, paytime=20211105, payamount=null, status=null, serialnumber=001), Tranlog(accountnumber=null, contract=null, paytime=2021106, payamount=null, status=null, serialnumber=002)]
+2021-12-02 13:39:00,138 INFO  [scheduling-1] ScheduledService: POST请求体{serialNumber=001, payTime=20211105, remark=null, payStatue=1, bid=bill1}
+2021-12-02 13:39:00,138 INFO  [scheduling-1] ScheduledService: ==========开始向住建局发回调接口请求==========
+2021-12-02 13:39:00,143 INFO  [scheduling-1] HttpClientUtil: 向住建局发请求情况正常，住建局返回内容为：{"status":200,"message":"成功","data":{"status":1}}
+2021-12-02 13:39:00,143 INFO  [scheduling-1] ScheduledService: 住建局返回内容status字段：{"status":200,"message":"成功","data":{"status":1}}
+2021-12-02 13:39:00,143 INFO  [scheduling-1] ScheduledService: {data={status=1.0}, message=成功, status=200.0}
+2021-12-02 13:39:00,143 INFO  [scheduling-1] ScheduledService: 住建局返回内容status字段：200.0
+2021-12-02 13:39:00,145 INFO  [scheduling-1] ScheduledService: 应收单据表合同号：202154321003状态已修改
+2021-12-02 13:39:00,145 INFO  [scheduling-1] ScheduledService: 流水表合同号：202154321003状态已修改
+2021-12-02 13:55:28,569 INFO  [background-preinit] Version: HV000001: Hibernate Validator 6.0.13.Final
+2021-12-02 13:55:28,576 INFO  [main] SpringbootApplication: Starting SpringbootApplication using Java 1.8.0_131 on DESKTOP-UCTQGUL with PID 1848 (G:\springboot-demo\target\classes started by CCH in G:\springboot-demo)
+2021-12-02 13:55:28,577 INFO  [main] SpringbootApplication: The following profiles are active: test
+2021-12-02 13:55:30,172 INFO  [main] TomcatWebServer: Tomcat initialized with port(s): 8082 (http)
+2021-12-02 13:55:30,181 INFO  [main] Http11NioProtocol: Initializing ProtocolHandler ["http-nio-8082"]
+2021-12-02 13:55:30,182 INFO  [main] StandardService: Starting service [Tomcat]
+2021-12-02 13:55:30,182 INFO  [main] StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-02 13:55:30,183 INFO  [main] AprLifecycleListener: An older version [1.2.25] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2021-12-02 13:55:30,183 INFO  [main] AprLifecycleListener: Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-02 13:55:30,183 INFO  [main] AprLifecycleListener: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2021-12-02 13:55:30,183 INFO  [main] AprLifecycleListener: APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-02 13:55:30,184 INFO  [main] AprLifecycleListener: OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-02 13:55:30,308 INFO  [main] [/]: Initializing Spring embedded WebApplicationContext
+2021-12-02 13:55:30,309 INFO  [main] ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1681 ms
+2021-12-02 13:55:31,108 INFO  [main] PropertySourcedRequestMappingHandlerMapping: Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-12-02 13:55:31,407 INFO  [main] Http11NioProtocol: Starting ProtocolHandler ["http-nio-8082"]
+2021-12-02 13:55:31,423 INFO  [main] TomcatWebServer: Tomcat started on port(s): 8082 (http) with context path ''
+2021-12-02 13:55:31,424 INFO  [main] DocumentationPluginsBootstrapper: Context refreshed
+2021-12-02 13:55:31,448 INFO  [main] DocumentationPluginsBootstrapper: Found 1 custom documentation plugin(s)
+2021-12-02 13:55:31,471 INFO  [main] ApiListingReferenceScanner: Scanning for api listing references
+2021-12-02 13:55:31,618 INFO  [main] SpringbootApplication: Started SpringbootApplication in 3.474 seconds (JVM running for 3.881)
+2021-12-02 13:56:00,006 INFO  [scheduling-1] ScheduledTask: ==========发请求给住建局,开始取token=========
+2021-12-02 13:56:00,399 INFO  [http-nio-8082-exec-1] [/]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-02 13:56:00,399 INFO  [http-nio-8082-exec-1] DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+2021-12-02 13:56:00,400 INFO  [http-nio-8082-exec-1] DispatcherServlet: Completed initialization in 1 ms
+2021-12-02 13:56:00,514 INFO  [scheduling-1] HttpClientUtil: 向住建局发请求情况正常，住建局返回内容为：{"status":200,"message":"获取token成功","data":"woshiyigetoken"}
+2021-12-02 13:56:00,518 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-02 13:56:00,518 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-02 13:57:00,015 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-02 13:57:00,033 INFO  [scheduling-1] HikariDataSource: HikariPool-1 - Starting...
+2021-12-02 13:57:00,151 INFO  [scheduling-1] PoolBase: HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2021-12-02 13:57:00,154 INFO  [scheduling-1] HikariDataSource: HikariPool-1 - Start completed.
+2021-12-02 13:57:00,360 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[]
+2021-12-02 13:57:41,482 INFO  [http-nio-8082-exec-3] AccountController: ==========接到住建局查询激活状态请求=========
+2021-12-02 13:57:41,495 INFO  [http-nio-8082-exec-3] AccountController: 专户号：621081060003数据库已存在
+2021-12-02 13:57:41,496 INFO  [http-nio-8082-exec-3] AccountController: 专户号：621081060003签约成功
+2021-12-02 13:58:36,171 INFO  [http-nio-8082-exec-4] BillingController: ==========接到住建局应收单据接口请求=========
+2021-12-02 13:58:36,201 INFO  [http-nio-8082-exec-4] GlobalFillMetaObjectHandler: start insert fill...
+2021-12-02 13:58:36,242 INFO  [http-nio-8082-exec-4] BillingController: 合同号：string回收单据插库成功
+2021-12-02 14:22:51,879 INFO  [main] SpringbootApplication: Starting SpringbootApplication using Java 1.8.0_131 on DESKTOP-UCTQGUL with PID 16920 (G:\springboot-demo\target\classes started by CCH in G:\springboot-demo)
+2021-12-02 14:22:51,879 INFO  [background-preinit] Version: HV000001: Hibernate Validator 6.0.13.Final
+2021-12-02 14:22:51,881 INFO  [main] SpringbootApplication: The following profiles are active: test
+2021-12-02 14:22:53,420 INFO  [main] TomcatWebServer: Tomcat initialized with port(s): 8082 (http)
+2021-12-02 14:22:53,431 INFO  [main] Http11NioProtocol: Initializing ProtocolHandler ["http-nio-8082"]
+2021-12-02 14:22:53,431 INFO  [main] StandardService: Starting service [Tomcat]
+2021-12-02 14:22:53,431 INFO  [main] StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-02 14:22:53,432 INFO  [main] AprLifecycleListener: An older version [1.2.25] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2021-12-02 14:22:53,432 INFO  [main] AprLifecycleListener: Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-02 14:22:53,432 INFO  [main] AprLifecycleListener: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2021-12-02 14:22:53,432 INFO  [main] AprLifecycleListener: APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-02 14:22:53,435 INFO  [main] AprLifecycleListener: OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-02 14:22:53,556 INFO  [main] [/]: Initializing Spring embedded WebApplicationContext
+2021-12-02 14:22:53,556 INFO  [main] ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1627 ms
+2021-12-02 14:22:54,423 INFO  [main] PropertySourcedRequestMappingHandlerMapping: Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-12-02 14:22:54,701 INFO  [main] Http11NioProtocol: Starting ProtocolHandler ["http-nio-8082"]
+2021-12-02 14:22:54,716 INFO  [main] TomcatWebServer: Tomcat started on port(s): 8082 (http) with context path ''
+2021-12-02 14:22:54,716 INFO  [main] DocumentationPluginsBootstrapper: Context refreshed
+2021-12-02 14:22:54,738 INFO  [main] DocumentationPluginsBootstrapper: Found 1 custom documentation plugin(s)
+2021-12-02 14:22:54,762 INFO  [main] ApiListingReferenceScanner: Scanning for api listing references
+2021-12-02 14:22:54,921 INFO  [main] SpringbootApplication: Started SpringbootApplication in 3.479 seconds (JVM running for 3.883)
+2021-12-02 14:23:04,292 INFO  [http-nio-8082-exec-1] [/]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-02 14:23:04,292 INFO  [http-nio-8082-exec-1] DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+2021-12-02 14:23:04,293 INFO  [http-nio-8082-exec-1] DispatcherServlet: Completed initialization in 1 ms
+2021-12-02 14:23:04,388 INFO  [http-nio-8082-exec-1] BillingController: ==========接到住建局应收单据接口请求=========
+2021-12-02 14:23:04,414 INFO  [http-nio-8082-exec-1] HikariDataSource: HikariPool-1 - Starting...
+2021-12-02 14:23:04,549 INFO  [http-nio-8082-exec-1] PoolBase: HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2021-12-02 14:23:04,552 INFO  [http-nio-8082-exec-1] HikariDataSource: HikariPool-1 - Start completed.
+2021-12-02 14:23:04,663 INFO  [http-nio-8082-exec-1] BillingController: 合同号：string应收单据库里已存在
+2021-12-02 14:23:04,663 INFO  [http-nio-8082-exec-1] BillingController: 接到住建局应收单据接口请求,返回操作成功
+2021-12-02 14:56:00,002 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-02 14:56:00,479 INFO  [scheduling-1] HttpClientUtil: 向住建局发请求情况正常，住建局返回内容为：{"status":200,"message":"获取token成功","data":"woshiyigetoken"}
+2021-12-02 14:56:00,482 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-02 14:56:00,482 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-02 15:43:41,131 INFO  [background-preinit] Version: HV000001: Hibernate Validator 6.0.13.Final
+2021-12-02 15:43:41,139 INFO  [main] SpringbootApplication: Starting SpringbootApplication using Java 1.8.0_131 on DESKTOP-UCTQGUL with PID 10472 (G:\springboot-demo\target\classes started by CCH in G:\springboot-demo)
+2021-12-02 15:43:41,139 INFO  [main] SpringbootApplication: The following profiles are active: test
+2021-12-02 15:43:42,832 INFO  [main] TomcatWebServer: Tomcat initialized with port(s): 8082 (http)
+2021-12-02 15:43:42,842 INFO  [main] Http11NioProtocol: Initializing ProtocolHandler ["http-nio-8082"]
+2021-12-02 15:43:42,842 INFO  [main] StandardService: Starting service [Tomcat]
+2021-12-02 15:43:42,842 INFO  [main] StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-02 15:43:42,843 INFO  [main] AprLifecycleListener: An older version [1.2.25] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2021-12-02 15:43:42,843 INFO  [main] AprLifecycleListener: Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-02 15:43:42,843 INFO  [main] AprLifecycleListener: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2021-12-02 15:43:42,843 INFO  [main] AprLifecycleListener: APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-02 15:43:42,846 INFO  [main] AprLifecycleListener: OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-02 15:43:42,977 INFO  [main] [/]: Initializing Spring embedded WebApplicationContext
+2021-12-02 15:43:42,977 INFO  [main] ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1791 ms
+2021-12-02 15:43:43,782 INFO  [main] PropertySourcedRequestMappingHandlerMapping: Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-12-02 15:43:44,084 INFO  [main] Http11NioProtocol: Starting ProtocolHandler ["http-nio-8082"]
+2021-12-02 15:43:44,099 INFO  [main] TomcatWebServer: Tomcat started on port(s): 8082 (http) with context path ''
+2021-12-02 15:43:44,100 INFO  [main] DocumentationPluginsBootstrapper: Context refreshed
+2021-12-02 15:43:44,120 INFO  [main] DocumentationPluginsBootstrapper: Found 1 custom documentation plugin(s)
+2021-12-02 15:43:44,142 INFO  [main] ApiListingReferenceScanner: Scanning for api listing references
+2021-12-02 15:43:44,319 INFO  [main] SpringbootApplication: Started SpringbootApplication in 3.637 seconds (JVM running for 4.06)
+2021-12-02 15:43:50,723 INFO  [http-nio-8082-exec-1] [/]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-02 15:43:50,723 INFO  [http-nio-8082-exec-1] DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+2021-12-02 15:43:50,724 INFO  [http-nio-8082-exec-1] DispatcherServlet: Completed initialization in 1 ms
+2021-12-02 15:44:13,647 INFO  [background-preinit] Version: HV000001: Hibernate Validator 6.0.13.Final
+2021-12-02 15:44:13,652 INFO  [main] SpringbootApplication: Starting SpringbootApplication using Java 1.8.0_131 on DESKTOP-UCTQGUL with PID 15464 (G:\springboot-demo\target\classes started by CCH in G:\springboot-demo)
+2021-12-02 15:44:13,652 INFO  [main] SpringbootApplication: The following profiles are active: test
+2021-12-02 15:44:15,148 INFO  [main] TomcatWebServer: Tomcat initialized with port(s): 8082 (http)
+2021-12-02 15:44:15,158 INFO  [main] Http11NioProtocol: Initializing ProtocolHandler ["http-nio-8082"]
+2021-12-02 15:44:15,158 INFO  [main] StandardService: Starting service [Tomcat]
+2021-12-02 15:44:15,158 INFO  [main] StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-02 15:44:15,159 INFO  [main] AprLifecycleListener: An older version [1.2.25] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2021-12-02 15:44:15,159 INFO  [main] AprLifecycleListener: Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-02 15:44:15,159 INFO  [main] AprLifecycleListener: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2021-12-02 15:44:15,160 INFO  [main] AprLifecycleListener: APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-02 15:44:15,162 INFO  [main] AprLifecycleListener: OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-02 15:44:15,291 INFO  [main] [/]: Initializing Spring embedded WebApplicationContext
+2021-12-02 15:44:15,291 INFO  [main] ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1582 ms
+2021-12-02 15:44:16,070 INFO  [main] PropertySourcedRequestMappingHandlerMapping: Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-12-02 15:44:16,364 INFO  [main] Http11NioProtocol: Starting ProtocolHandler ["http-nio-8082"]
+2021-12-02 15:44:16,379 INFO  [main] TomcatWebServer: Tomcat started on port(s): 8082 (http) with context path ''
+2021-12-02 15:44:16,380 INFO  [main] DocumentationPluginsBootstrapper: Context refreshed
+2021-12-02 15:44:16,402 INFO  [main] DocumentationPluginsBootstrapper: Found 1 custom documentation plugin(s)
+2021-12-02 15:44:16,423 INFO  [main] ApiListingReferenceScanner: Scanning for api listing references
+2021-12-02 15:44:16,581 INFO  [main] SpringbootApplication: Started SpringbootApplication in 3.378 seconds (JVM running for 3.789)
+2021-12-02 15:45:00,003 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-02 15:45:00,399 INFO  [http-nio-8082-exec-1] [/]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-02 15:45:00,399 INFO  [http-nio-8082-exec-1] DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+2021-12-02 15:45:00,400 INFO  [http-nio-8082-exec-1] DispatcherServlet: Completed initialization in 1 ms
+2021-12-02 15:45:00,541 ERROR [http-nio-8082-exec-1] [dispatcherServlet]: Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.multipart.MultipartException: Failed to parse multipart servlet request; nested exception is java.io.IOException: org.apache.tomcat.util.http.fileupload.FileUploadException: the request was rejected because no multipart boundary was found] with root cause
+org.apache.tomcat.util.http.fileupload.FileUploadException: the request was rejected because no multipart boundary was found
+	at org.apache.tomcat.util.http.fileupload.impl.FileItemIteratorImpl.init(FileItemIteratorImpl.java:189)
+	at org.apache.tomcat.util.http.fileupload.impl.FileItemIteratorImpl.getMultiPartStream(FileItemIteratorImpl.java:205)
+	at org.apache.tomcat.util.http.fileupload.impl.FileItemIteratorImpl.findNextItem(FileItemIteratorImpl.java:224)
+	at org.apache.tomcat.util.http.fileupload.impl.FileItemIteratorImpl.<init>(FileItemIteratorImpl.java:142)
+	at org.apache.tomcat.util.http.fileupload.FileUploadBase.getItemIterator(FileUploadBase.java:252)
+	at org.apache.tomcat.util.http.fileupload.FileUploadBase.parseRequest(FileUploadBase.java:276)
+	at org.apache.catalina.connector.Request.parseParts(Request.java:2921)
+	at org.apache.catalina.connector.Request.getParts(Request.java:2823)
+	at org.apache.catalina.connector.RequestFacade.getParts(RequestFacade.java:1098)
+	at org.springframework.web.multipart.support.StandardMultipartHttpServletRequest.parseRequest(StandardMultipartHttpServletRequest.java:95)
+	at org.springframework.web.multipart.support.StandardMultipartHttpServletRequest.<init>(StandardMultipartHttpServletRequest.java:88)
+	at org.springframework.web.multipart.support.StandardServletMultipartResolver.resolveMultipart(StandardServletMultipartResolver.java:122)
+	at org.springframework.web.servlet.DispatcherServlet.checkMultipart(DispatcherServlet.java:1205)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-12-02 15:45:00,593 INFO  [scheduling-1] HttpClientUtil: {path=/api/open-saas-biz-service/open/getToken, error=Internal Server Error, timestamp=2021-12-02T07:45:00.554+00:00, status=500.0}
+2021-12-02 15:45:00,593 INFO  [scheduling-1] ScheduledTask: TOKEN:null
+2021-12-02 15:54:19,846 INFO  [background-preinit] Version: HV000001: Hibernate Validator 6.0.13.Final
+2021-12-02 15:54:19,855 INFO  [main] SpringbootApplication: Starting SpringbootApplication using Java 1.8.0_131 on DESKTOP-UCTQGUL with PID 6336 (G:\springboot-demo\target\classes started by CCH in G:\springboot-demo)
+2021-12-02 15:54:19,855 INFO  [main] SpringbootApplication: The following profiles are active: test
+2021-12-02 15:54:21,516 INFO  [main] TomcatWebServer: Tomcat initialized with port(s): 8082 (http)
+2021-12-02 15:54:21,525 INFO  [main] Http11NioProtocol: Initializing ProtocolHandler ["http-nio-8082"]
+2021-12-02 15:54:21,526 INFO  [main] StandardService: Starting service [Tomcat]
+2021-12-02 15:54:21,526 INFO  [main] StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-02 15:54:21,527 INFO  [main] AprLifecycleListener: An older version [1.2.25] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2021-12-02 15:54:21,527 INFO  [main] AprLifecycleListener: Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-02 15:54:21,527 INFO  [main] AprLifecycleListener: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2021-12-02 15:54:21,527 INFO  [main] AprLifecycleListener: APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-02 15:54:21,529 INFO  [main] AprLifecycleListener: OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-02 15:54:21,652 INFO  [main] [/]: Initializing Spring embedded WebApplicationContext
+2021-12-02 15:54:21,652 INFO  [main] ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1737 ms
+2021-12-02 15:54:22,454 INFO  [main] PropertySourcedRequestMappingHandlerMapping: Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-12-02 15:54:22,741 INFO  [main] Http11NioProtocol: Starting ProtocolHandler ["http-nio-8082"]
+2021-12-02 15:54:22,756 INFO  [main] TomcatWebServer: Tomcat started on port(s): 8082 (http) with context path ''
+2021-12-02 15:54:22,757 INFO  [main] DocumentationPluginsBootstrapper: Context refreshed
+2021-12-02 15:54:22,777 INFO  [main] DocumentationPluginsBootstrapper: Found 1 custom documentation plugin(s)
+2021-12-02 15:54:22,800 INFO  [main] ApiListingReferenceScanner: Scanning for api listing references
+2021-12-02 15:54:22,953 INFO  [main] SpringbootApplication: Started SpringbootApplication in 3.537 seconds (JVM running for 3.959)
+2021-12-02 15:54:27,818 INFO  [http-nio-8082-exec-1] [/]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-02 15:54:27,818 INFO  [http-nio-8082-exec-1] DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+2021-12-02 15:54:27,819 INFO  [http-nio-8082-exec-1] DispatcherServlet: Completed initialization in 1 ms
+2021-12-02 15:54:44,456 INFO  [background-preinit] Version: HV000001: Hibernate Validator 6.0.13.Final
+2021-12-02 15:54:44,466 INFO  [main] SpringbootApplication: Starting SpringbootApplication using Java 1.8.0_131 on DESKTOP-UCTQGUL with PID 17552 (G:\springboot-demo\target\classes started by CCH in G:\springboot-demo)
+2021-12-02 15:54:44,467 INFO  [main] SpringbootApplication: The following profiles are active: test
+2021-12-02 15:54:45,935 INFO  [main] TomcatWebServer: Tomcat initialized with port(s): 8082 (http)
+2021-12-02 15:54:45,944 INFO  [main] Http11NioProtocol: Initializing ProtocolHandler ["http-nio-8082"]
+2021-12-02 15:54:45,945 INFO  [main] StandardService: Starting service [Tomcat]
+2021-12-02 15:54:45,945 INFO  [main] StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-02 15:54:45,946 INFO  [main] AprLifecycleListener: An older version [1.2.25] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2021-12-02 15:54:45,946 INFO  [main] AprLifecycleListener: Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-02 15:54:45,946 INFO  [main] AprLifecycleListener: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2021-12-02 15:54:45,946 INFO  [main] AprLifecycleListener: APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-02 15:54:45,949 INFO  [main] AprLifecycleListener: OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-02 15:54:46,074 INFO  [main] [/]: Initializing Spring embedded WebApplicationContext
+2021-12-02 15:54:46,074 INFO  [main] ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1556 ms
+2021-12-02 15:54:46,860 INFO  [main] PropertySourcedRequestMappingHandlerMapping: Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-12-02 15:54:47,155 INFO  [main] Http11NioProtocol: Starting ProtocolHandler ["http-nio-8082"]
+2021-12-02 15:54:47,170 INFO  [main] TomcatWebServer: Tomcat started on port(s): 8082 (http) with context path ''
+2021-12-02 15:54:47,171 INFO  [main] DocumentationPluginsBootstrapper: Context refreshed
+2021-12-02 15:54:47,192 INFO  [main] DocumentationPluginsBootstrapper: Found 1 custom documentation plugin(s)
+2021-12-02 15:54:47,216 INFO  [main] ApiListingReferenceScanner: Scanning for api listing references
+2021-12-02 15:54:47,364 INFO  [main] SpringbootApplication: Started SpringbootApplication in 3.355 seconds (JVM running for 3.762)
+2021-12-02 15:55:00,001 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-02 15:55:00,417 INFO  [http-nio-8082-exec-1] [/]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-02 15:55:00,417 INFO  [http-nio-8082-exec-1] DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+2021-12-02 15:55:00,418 INFO  [http-nio-8082-exec-1] DispatcherServlet: Completed initialization in 1 ms
+2021-12-02 15:55:00,436 ERROR [http-nio-8082-exec-1] [dispatcherServlet]: Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.multipart.MultipartException: Failed to parse multipart servlet request; nested exception is java.io.IOException: org.apache.tomcat.util.http.fileupload.FileUploadException: the request was rejected because no multipart boundary was found] with root cause
+org.apache.tomcat.util.http.fileupload.FileUploadException: the request was rejected because no multipart boundary was found
+	at org.apache.tomcat.util.http.fileupload.impl.FileItemIteratorImpl.init(FileItemIteratorImpl.java:189)
+	at org.apache.tomcat.util.http.fileupload.impl.FileItemIteratorImpl.getMultiPartStream(FileItemIteratorImpl.java:205)
+	at org.apache.tomcat.util.http.fileupload.impl.FileItemIteratorImpl.findNextItem(FileItemIteratorImpl.java:224)
+	at org.apache.tomcat.util.http.fileupload.impl.FileItemIteratorImpl.<init>(FileItemIteratorImpl.java:142)
+	at org.apache.tomcat.util.http.fileupload.FileUploadBase.getItemIterator(FileUploadBase.java:252)
+	at org.apache.tomcat.util.http.fileupload.FileUploadBase.parseRequest(FileUploadBase.java:276)
+	at org.apache.catalina.connector.Request.parseParts(Request.java:2921)
+	at org.apache.catalina.connector.Request.getParts(Request.java:2823)
+	at org.apache.catalina.connector.RequestFacade.getParts(RequestFacade.java:1098)
+	at org.springframework.web.multipart.support.StandardMultipartHttpServletRequest.parseRequest(StandardMultipartHttpServletRequest.java:95)
+	at org.springframework.web.multipart.support.StandardMultipartHttpServletRequest.<init>(StandardMultipartHttpServletRequest.java:88)
+	at org.springframework.web.multipart.support.StandardServletMultipartResolver.resolveMultipart(StandardServletMultipartResolver.java:122)
+	at org.springframework.web.servlet.DispatcherServlet.checkMultipart(DispatcherServlet.java:1205)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-12-02 15:55:00,490 INFO  [scheduling-1] HttpClientUtil: {path=/api/open-saas-biz-service/open/getToken, error=Internal Server Error, timestamp=2021-12-02T07:55:00.451+00:00, status=500.0}
+2021-12-02 15:55:00,490 INFO  [scheduling-1] ScheduledTask: TOKEN:null
+2021-12-02 15:57:00,011 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-02 15:57:00,032 INFO  [scheduling-1] HikariDataSource: HikariPool-1 - Starting...
+2021-12-02 15:57:00,394 INFO  [scheduling-1] PoolBase: HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2021-12-02 15:57:00,397 INFO  [scheduling-1] HikariDataSource: HikariPool-1 - Start completed.
+2021-12-02 15:57:00,601 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{PAYMENTAMOUNT=0, CREATETIME=2021-12-02 13:58:36.0, BID=string, CID=string}]
+2021-12-02 15:57:00,601 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同号：string,支付金额：0,账单号：string
+2021-12-02 15:57:00,616 ERROR [scheduling-1] ScheduledTask: null
+java.lang.NullPointerException: null
+	at com.cch.demo.account.service.ScheduledService.checkdata(ScheduledService.java:42)
+	at com.cch.demo.account.service.ScheduledService$$FastClassBySpringCGLIB$$9dfe693a.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at com.cch.demo.account.service.ScheduledService$$EnhancerBySpringCGLIB$$e137539c.checkdata(<generated>)
+	at com.cch.demo.account.scheduled.ScheduledTask.scheduledTask(ScheduledTask.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2021-12-02 16:55:00,013 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-02 16:55:00,021 ERROR [http-nio-8082-exec-2] [dispatcherServlet]: Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.multipart.MultipartException: Failed to parse multipart servlet request; nested exception is java.io.IOException: org.apache.tomcat.util.http.fileupload.FileUploadException: the request was rejected because no multipart boundary was found] with root cause
+org.apache.tomcat.util.http.fileupload.FileUploadException: the request was rejected because no multipart boundary was found
+	at org.apache.tomcat.util.http.fileupload.impl.FileItemIteratorImpl.init(FileItemIteratorImpl.java:189)
+	at org.apache.tomcat.util.http.fileupload.impl.FileItemIteratorImpl.getMultiPartStream(FileItemIteratorImpl.java:205)
+	at org.apache.tomcat.util.http.fileupload.impl.FileItemIteratorImpl.findNextItem(FileItemIteratorImpl.java:224)
+	at org.apache.tomcat.util.http.fileupload.impl.FileItemIteratorImpl.<init>(FileItemIteratorImpl.java:142)
+	at org.apache.tomcat.util.http.fileupload.FileUploadBase.getItemIterator(FileUploadBase.java:252)
+	at org.apache.tomcat.util.http.fileupload.FileUploadBase.parseRequest(FileUploadBase.java:276)
+	at org.apache.catalina.connector.Request.parseParts(Request.java:2921)
+	at org.apache.catalina.connector.Request.getParts(Request.java:2823)
+	at org.apache.catalina.connector.RequestFacade.getParts(RequestFacade.java:1098)
+	at org.springframework.web.multipart.support.StandardMultipartHttpServletRequest.parseRequest(StandardMultipartHttpServletRequest.java:95)
+	at org.springframework.web.multipart.support.StandardMultipartHttpServletRequest.<init>(StandardMultipartHttpServletRequest.java:88)
+	at org.springframework.web.multipart.support.StandardServletMultipartResolver.resolveMultipart(StandardServletMultipartResolver.java:122)
+	at org.springframework.web.servlet.DispatcherServlet.checkMultipart(DispatcherServlet.java:1205)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-12-02 16:55:00,024 INFO  [scheduling-1] HttpClientUtil: {path=/api/open-saas-biz-service/open/getToken, error=Internal Server Error, timestamp=2021-12-02T08:55:00.022+00:00, status=500.0}
+2021-12-02 16:55:00,024 INFO  [scheduling-1] ScheduledTask: TOKEN:null
+2021-12-02 16:57:00,013 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-02 16:57:00,019 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{PAYMENTAMOUNT=0, CREATETIME=2021-12-02 13:58:36.0, BID=string, CID=string}]
+2021-12-02 16:57:00,019 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同号：string,支付金额：0,账单号：string
+2021-12-02 16:57:00,021 ERROR [scheduling-1] ScheduledTask: null
+java.lang.NullPointerException: null
+	at com.cch.demo.account.service.ScheduledService.checkdata(ScheduledService.java:42)
+	at com.cch.demo.account.service.ScheduledService$$FastClassBySpringCGLIB$$9dfe693a.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at com.cch.demo.account.service.ScheduledService$$EnhancerBySpringCGLIB$$e137539c.checkdata(<generated>)
+	at com.cch.demo.account.scheduled.ScheduledTask.scheduledTask(ScheduledTask.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2021-12-02 17:55:00,016 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-02 17:55:00,022 ERROR [http-nio-8082-exec-3] [dispatcherServlet]: Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.multipart.MultipartException: Failed to parse multipart servlet request; nested exception is java.io.IOException: org.apache.tomcat.util.http.fileupload.FileUploadException: the request was rejected because no multipart boundary was found] with root cause
+org.apache.tomcat.util.http.fileupload.FileUploadException: the request was rejected because no multipart boundary was found
+	at org.apache.tomcat.util.http.fileupload.impl.FileItemIteratorImpl.init(FileItemIteratorImpl.java:189)
+	at org.apache.tomcat.util.http.fileupload.impl.FileItemIteratorImpl.getMultiPartStream(FileItemIteratorImpl.java:205)
+	at org.apache.tomcat.util.http.fileupload.impl.FileItemIteratorImpl.findNextItem(FileItemIteratorImpl.java:224)
+	at org.apache.tomcat.util.http.fileupload.impl.FileItemIteratorImpl.<init>(FileItemIteratorImpl.java:142)
+	at org.apache.tomcat.util.http.fileupload.FileUploadBase.getItemIterator(FileUploadBase.java:252)
+	at org.apache.tomcat.util.http.fileupload.FileUploadBase.parseRequest(FileUploadBase.java:276)
+	at org.apache.catalina.connector.Request.parseParts(Request.java:2921)
+	at org.apache.catalina.connector.Request.getParts(Request.java:2823)
+	at org.apache.catalina.connector.RequestFacade.getParts(RequestFacade.java:1098)
+	at org.springframework.web.multipart.support.StandardMultipartHttpServletRequest.parseRequest(StandardMultipartHttpServletRequest.java:95)
+	at org.springframework.web.multipart.support.StandardMultipartHttpServletRequest.<init>(StandardMultipartHttpServletRequest.java:88)
+	at org.springframework.web.multipart.support.StandardServletMultipartResolver.resolveMultipart(StandardServletMultipartResolver.java:122)
+	at org.springframework.web.servlet.DispatcherServlet.checkMultipart(DispatcherServlet.java:1205)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-12-02 17:55:00,024 INFO  [scheduling-1] HttpClientUtil: {path=/api/open-saas-biz-service/open/getToken, error=Internal Server Error, timestamp=2021-12-02T09:55:00.023+00:00, status=500.0}
+2021-12-02 17:55:00,024 INFO  [scheduling-1] ScheduledTask: TOKEN:null
+2021-12-02 17:57:00,009 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-02 17:57:00,015 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{PAYMENTAMOUNT=0, CREATETIME=2021-12-02 13:58:36.0, BID=string, CID=string}]
+2021-12-02 17:57:00,016 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同号：string,支付金额：0,账单号：string
+2021-12-02 17:57:00,018 ERROR [scheduling-1] ScheduledTask: null
+java.lang.NullPointerException: null
+	at com.cch.demo.account.service.ScheduledService.checkdata(ScheduledService.java:42)
+	at com.cch.demo.account.service.ScheduledService$$FastClassBySpringCGLIB$$9dfe693a.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at com.cch.demo.account.service.ScheduledService$$EnhancerBySpringCGLIB$$e137539c.checkdata(<generated>)
+	at com.cch.demo.account.scheduled.ScheduledTask.scheduledTask(ScheduledTask.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2021-12-02 17:58:36,997 INFO  [background-preinit] Version: HV000001: Hibernate Validator 6.0.13.Final
+2021-12-02 17:58:37,007 INFO  [main] SpringbootApplication: Starting SpringbootApplication using Java 1.8.0_131 on DESKTOP-UCTQGUL with PID 9584 (G:\springboot-demo\target\classes started by CCH in G:\springboot-demo)
+2021-12-02 17:58:37,007 INFO  [main] SpringbootApplication: The following profiles are active: test
+2021-12-02 17:58:38,581 INFO  [main] TomcatWebServer: Tomcat initialized with port(s): 8082 (http)
+2021-12-02 17:58:38,591 INFO  [main] Http11NioProtocol: Initializing ProtocolHandler ["http-nio-8082"]
+2021-12-02 17:58:38,591 INFO  [main] StandardService: Starting service [Tomcat]
+2021-12-02 17:58:38,591 INFO  [main] StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-02 17:58:38,592 INFO  [main] AprLifecycleListener: An older version [1.2.25] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2021-12-02 17:58:38,593 INFO  [main] AprLifecycleListener: Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-02 17:58:38,593 INFO  [main] AprLifecycleListener: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2021-12-02 17:58:38,593 INFO  [main] AprLifecycleListener: APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-02 17:58:38,595 INFO  [main] AprLifecycleListener: OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-02 17:58:38,725 INFO  [main] [/]: Initializing Spring embedded WebApplicationContext
+2021-12-02 17:58:38,725 INFO  [main] ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1673 ms
+2021-12-02 17:58:39,508 INFO  [main] PropertySourcedRequestMappingHandlerMapping: Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-12-02 17:58:39,792 INFO  [main] Http11NioProtocol: Starting ProtocolHandler ["http-nio-8082"]
+2021-12-02 17:58:39,817 INFO  [main] TomcatWebServer: Tomcat started on port(s): 8082 (http) with context path ''
+2021-12-02 17:58:39,818 INFO  [main] DocumentationPluginsBootstrapper: Context refreshed
+2021-12-02 17:58:39,840 INFO  [main] DocumentationPluginsBootstrapper: Found 1 custom documentation plugin(s)
+2021-12-02 17:58:39,865 INFO  [main] ApiListingReferenceScanner: Scanning for api listing references
+2021-12-02 17:58:40,017 INFO  [main] SpringbootApplication: Started SpringbootApplication in 3.443 seconds (JVM running for 3.838)
+2021-12-02 17:59:00,004 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-02 17:59:00,421 INFO  [http-nio-8082-exec-1] [/]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-02 17:59:00,422 INFO  [http-nio-8082-exec-1] DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+2021-12-02 17:59:00,422 INFO  [http-nio-8082-exec-1] DispatcherServlet: Completed initialization in 0 ms
+2021-12-02 17:59:00,530 INFO  [scheduling-1] HttpClientUtil: 向住建局发请求情况正常，住建局返回内容为：{"status":200,"message":"获取token成功","data":"woshiyigetoken"}
+2021-12-02 17:59:00,534 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-02 17:59:00,534 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-02 18:00:00,004 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-02 18:00:00,025 INFO  [scheduling-1] HikariDataSource: HikariPool-1 - Starting...
+2021-12-02 18:00:00,156 INFO  [scheduling-1] PoolBase: HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2021-12-02 18:00:00,159 INFO  [scheduling-1] HikariDataSource: HikariPool-1 - Start completed.
+2021-12-02 18:00:00,382 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{PAYMENTAMOUNT=0, CREATETIME=2021-12-02 13:58:36.0, BID=string, CID=string}]
+2021-12-02 18:00:00,382 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同号：string,支付金额：0,账单号：string
+2021-12-02 18:00:00,398 ERROR [scheduling-1] ScheduledTask: null
+java.lang.NullPointerException: null
+	at com.cch.demo.account.service.ScheduledService.checkdata(ScheduledService.java:42)
+	at com.cch.demo.account.service.ScheduledService$$FastClassBySpringCGLIB$$9dfe693a.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at com.cch.demo.account.service.ScheduledService$$EnhancerBySpringCGLIB$$2ba74689.checkdata(<generated>)
+	at com.cch.demo.account.scheduled.ScheduledTask.scheduledTask(ScheduledTask.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2021-12-02 18:24:16,399 INFO  [background-preinit] Version: HV000001: Hibernate Validator 6.0.13.Final
+2021-12-02 18:24:16,405 INFO  [main] SpringbootApplication: Starting SpringbootApplication using Java 1.8.0_131 on DESKTOP-UCTQGUL with PID 21228 (G:\springboot-demo\target\classes started by CCH in G:\springboot-demo)
+2021-12-02 18:24:16,405 INFO  [main] SpringbootApplication: The following profiles are active: test
+2021-12-02 18:24:17,895 INFO  [main] TomcatWebServer: Tomcat initialized with port(s): 8082 (http)
+2021-12-02 18:24:17,907 INFO  [main] Http11NioProtocol: Initializing ProtocolHandler ["http-nio-8082"]
+2021-12-02 18:24:17,907 INFO  [main] StandardService: Starting service [Tomcat]
+2021-12-02 18:24:17,907 INFO  [main] StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-02 18:24:17,909 INFO  [main] AprLifecycleListener: An older version [1.2.25] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2021-12-02 18:24:17,909 INFO  [main] AprLifecycleListener: Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-02 18:24:17,909 INFO  [main] AprLifecycleListener: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2021-12-02 18:24:17,909 INFO  [main] AprLifecycleListener: APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-02 18:24:17,912 INFO  [main] AprLifecycleListener: OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-02 18:24:18,035 INFO  [main] [/]: Initializing Spring embedded WebApplicationContext
+2021-12-02 18:24:18,035 INFO  [main] ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1576 ms
+2021-12-02 18:24:18,784 INFO  [main] PropertySourcedRequestMappingHandlerMapping: Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-12-02 18:24:19,064 INFO  [main] Http11NioProtocol: Starting ProtocolHandler ["http-nio-8082"]
+2021-12-02 18:24:19,080 INFO  [main] TomcatWebServer: Tomcat started on port(s): 8082 (http) with context path ''
+2021-12-02 18:24:19,081 INFO  [main] DocumentationPluginsBootstrapper: Context refreshed
+2021-12-02 18:24:19,104 INFO  [main] DocumentationPluginsBootstrapper: Found 1 custom documentation plugin(s)
+2021-12-02 18:24:19,128 INFO  [main] ApiListingReferenceScanner: Scanning for api listing references
+2021-12-02 18:24:19,279 INFO  [main] SpringbootApplication: Started SpringbootApplication in 3.319 seconds (JVM running for 3.724)
+2021-12-02 18:25:00,013 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-02 18:25:00,423 INFO  [http-nio-8082-exec-1] [/]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-02 18:25:00,423 INFO  [http-nio-8082-exec-1] DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+2021-12-02 18:25:00,424 INFO  [http-nio-8082-exec-1] DispatcherServlet: Completed initialization in 1 ms
+2021-12-02 18:25:00,547 INFO  [scheduling-1] HttpClientUtil: 向住建局发请求情况正常，住建局返回内容为：{"status":200,"message":"获取token成功","data":"woshiyigetoken"}
+2021-12-02 18:25:00,550 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-02 18:25:00,551 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-02 18:26:00,002 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-02 18:26:00,024 INFO  [scheduling-1] HikariDataSource: HikariPool-1 - Starting...
+2021-12-02 18:26:00,144 INFO  [scheduling-1] PoolBase: HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2021-12-02 18:26:00,147 INFO  [scheduling-1] HikariDataSource: HikariPool-1 - Start completed.
+2021-12-02 18:26:00,369 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{PAYMENTAMOUNT=0, CREATETIME=2021-12-02 13:58:36.0, BID=string, CID=string}]
+2021-12-02 18:26:00,369 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同号：string,支付金额：0,账单号：string

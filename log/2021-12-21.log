@@ -1,0 +1,151 @@
+2021-12-21 14:16:51,216 INFO  [main] SpringbootApplication: Starting SpringbootApplication using Java 1.8.0_131 on DESKTOP-UCTQGUL with PID 3036 (G:\springboot-demo\target\classes started by CCH in G:\springboot-demo)
+2021-12-21 14:16:51,216 INFO  [background-preinit] Version: HV000001: Hibernate Validator 6.0.13.Final
+2021-12-21 14:16:51,230 INFO  [main] SpringbootApplication: The following profiles are active: test
+2021-12-21 14:16:54,101 INFO  [main] TomcatWebServer: Tomcat initialized with port(s): 8082 (http)
+2021-12-21 14:16:54,112 INFO  [main] Http11NioProtocol: Initializing ProtocolHandler ["http-nio-8082"]
+2021-12-21 14:16:54,113 INFO  [main] StandardService: Starting service [Tomcat]
+2021-12-21 14:16:54,113 INFO  [main] StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-21 14:16:54,115 INFO  [main] AprLifecycleListener: An older version [1.2.25] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2021-12-21 14:16:54,115 INFO  [main] AprLifecycleListener: Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-21 14:16:54,115 INFO  [main] AprLifecycleListener: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2021-12-21 14:16:54,115 INFO  [main] AprLifecycleListener: APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-21 14:16:54,228 INFO  [main] AprLifecycleListener: OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-21 14:16:54,475 INFO  [main] [/]: Initializing Spring embedded WebApplicationContext
+2021-12-21 14:16:54,475 INFO  [main] ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 3136 ms
+2021-12-21 14:16:55,553 INFO  [main] PropertySourcedRequestMappingHandlerMapping: Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-12-21 14:16:55,931 INFO  [main] Http11NioProtocol: Starting ProtocolHandler ["http-nio-8082"]
+2021-12-21 14:16:55,960 INFO  [main] TomcatWebServer: Tomcat started on port(s): 8082 (http) with context path ''
+2021-12-21 14:16:55,960 INFO  [main] DocumentationPluginsBootstrapper: Context refreshed
+2021-12-21 14:16:56,003 INFO  [main] DocumentationPluginsBootstrapper: Found 1 custom documentation plugin(s)
+2021-12-21 14:16:56,031 INFO  [main] ApiListingReferenceScanner: Scanning for api listing references
+2021-12-21 14:16:56,224 INFO  [main] SpringbootApplication: Started SpringbootApplication in 5.852 seconds (JVM running for 6.598)
+2021-12-21 14:17:00,003 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-21 14:17:01,879 ERROR [scheduling-1] ScheduledTask: null
+java.lang.NullPointerException: null
+	at com.cch.demo.account.util.HttpClientUtil.post(HttpClientUtil.java:99)
+	at com.cch.demo.account.scheduled.ScheduledTask.getToken(ScheduledTask.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2021-12-21 14:17:01,880 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-21 14:17:01,918 INFO  [scheduling-1] HikariDataSource: HikariPool-1 - Starting...
+2021-12-21 14:17:02,292 INFO  [scheduling-1] PoolBase: HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2021-12-21 14:17:02,295 INFO  [scheduling-1] HikariDataSource: HikariPool-1 - Start completed.
+2021-12-21 14:17:02,429 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}]
+2021-12-21 14:17:02,429 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-21 14:17:02,463 INFO  [scheduling-1] ScheduledTask: ==========开始每日导入Tranlog流水表=========
+2021-12-21 14:17:10,012 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-21 14:17:11,025 ERROR [scheduling-1] ScheduledTask: null
+java.lang.NullPointerException: null
+	at com.cch.demo.account.util.HttpClientUtil.post(HttpClientUtil.java:99)
+	at com.cch.demo.account.scheduled.ScheduledTask.getToken(ScheduledTask.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2021-12-21 14:18:28,808 INFO  [background-preinit] Version: HV000001: Hibernate Validator 6.0.13.Final
+2021-12-21 14:18:28,821 INFO  [main] SpringbootApplication: Starting SpringbootApplication using Java 1.8.0_131 on DESKTOP-UCTQGUL with PID 9728 (G:\springboot-demo\target\classes started by CCH in G:\springboot-demo)
+2021-12-21 14:18:28,821 INFO  [main] SpringbootApplication: The following profiles are active: test
+2021-12-21 14:18:30,508 INFO  [main] TomcatWebServer: Tomcat initialized with port(s): 8082 (http)
+2021-12-21 14:18:30,518 INFO  [main] Http11NioProtocol: Initializing ProtocolHandler ["http-nio-8082"]
+2021-12-21 14:18:30,519 INFO  [main] StandardService: Starting service [Tomcat]
+2021-12-21 14:18:30,519 INFO  [main] StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-21 14:18:30,520 INFO  [main] AprLifecycleListener: An older version [1.2.25] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2021-12-21 14:18:30,520 INFO  [main] AprLifecycleListener: Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-21 14:18:30,520 INFO  [main] AprLifecycleListener: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2021-12-21 14:18:30,520 INFO  [main] AprLifecycleListener: APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-21 14:18:30,523 INFO  [main] AprLifecycleListener: OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-21 14:18:30,671 INFO  [main] [/]: Initializing Spring embedded WebApplicationContext
+2021-12-21 14:18:30,671 INFO  [main] ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1803 ms
+2021-12-21 14:18:31,462 INFO  [main] PropertySourcedRequestMappingHandlerMapping: Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-12-21 14:18:31,758 INFO  [main] Http11NioProtocol: Starting ProtocolHandler ["http-nio-8082"]
+2021-12-21 14:18:31,789 INFO  [main] TomcatWebServer: Tomcat started on port(s): 8082 (http) with context path ''
+2021-12-21 14:18:31,789 INFO  [main] DocumentationPluginsBootstrapper: Context refreshed
+2021-12-21 14:18:31,811 INFO  [main] DocumentationPluginsBootstrapper: Found 1 custom documentation plugin(s)
+2021-12-21 14:18:31,834 INFO  [main] ApiListingReferenceScanner: Scanning for api listing references
+2021-12-21 14:18:32,008 INFO  [main] SpringbootApplication: Started SpringbootApplication in 3.762 seconds (JVM running for 4.235)
+2021-12-21 14:18:40,001 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-21 14:18:41,462 ERROR [scheduling-1] ScheduledTask: null
+java.lang.NullPointerException: null
+	at com.cch.demo.account.util.HttpClientUtil.post(HttpClientUtil.java:99)
+	at com.cch.demo.account.scheduled.ScheduledTask.getToken(ScheduledTask.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2021-12-21 14:18:50,009 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-21 14:18:51,023 ERROR [scheduling-1] ScheduledTask: null
+java.lang.NullPointerException: null
+	at com.cch.demo.account.util.HttpClientUtil.post(HttpClientUtil.java:99)
+	at com.cch.demo.account.scheduled.ScheduledTask.getToken(ScheduledTask.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2021-12-21 14:19:00,016 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-21 14:19:00,033 INFO  [scheduling-1] HikariDataSource: HikariPool-1 - Starting...
+2021-12-21 14:19:00,205 INFO  [scheduling-1] PoolBase: HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2021-12-21 14:19:00,215 INFO  [scheduling-1] HikariDataSource: HikariPool-1 - Start completed.
+2021-12-21 14:19:00,337 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}]
+2021-12-21 14:19:00,337 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-21 14:19:00,352 INFO  [scheduling-1] ScheduledTask: ==========开始每日导入Tranlog流水表=========
+2021-12-21 14:19:00,355 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-21 14:19:01,370 ERROR [scheduling-1] ScheduledTask: null
+java.lang.NullPointerException: null
+	at com.cch.demo.account.util.HttpClientUtil.post(HttpClientUtil.java:99)
+	at com.cch.demo.account.scheduled.ScheduledTask.getToken(ScheduledTask.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)

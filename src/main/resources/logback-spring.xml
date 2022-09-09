@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+	<springProperty scope="context" name="LOG_PATH" source="logging.file.path" />
+
+	<appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<charset>UTF-8</charset>
+			<Pattern>%d %-5level [%thread] %logger{0}: %msg%n</Pattern>
+		</encoder>
+	</appender>
+
+	<appender name="FILE_INFO"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOG_PATH}/%d{yyyy-MM-dd}.log</fileNamePattern>
+			<maxHistory>365</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<charset>utf-8</charset>
+			<Pattern>%d %-5level [%thread] %logger{0}: %msg%n</Pattern>
+		</encoder>
+	</appender>
+
+	<appender name="ASYNC_INFO" class="ch.qos.logback.classic.AsyncAppender">
+		<queueSize>512</queueSize>
+		<appender-ref ref="FILE_INFO" />
+	</appender>
+
+	<contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator">
+		<resetJUL>true</resetJUL>
+	</contextListener>
+
+	<root level="INFO">
+		<appender-ref ref="ASYNC_INFO" />
+		<appender-ref ref="CONSOLE" />
+	</root>
+</configuration>

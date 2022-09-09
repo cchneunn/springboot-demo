@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cch.demo.account.mapper.BillingMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.cch.demo.account.entity.Billing">
+        <id column="cid" property="cid" />
+        <result column="bid" property="bid" />
+        <result column="paymentamount" property="paymentamount" />
+        <result column="type" property="type" />
+        <result column="paystarttime" property="paystarttime" />
+        <result column="payendTime" property="payendTime" />
+        <result column="specialaccountno" property="specialaccountno" />
+        <result column="status" property="status" />
+        <result column="createtime" property="createtime" />
+
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        cid,paymentAmount,type,paystarttime,payendtime,status,createtime
+    </sql>
+
+    <select id="getListByBillingCid" resultType="java.util.Map">
+        select *
+        from Billing
+        where cid = #{cid} and cancel is null
+    </select>
+    <select id="getListByBillingStatus" resultType="java.util.Map">
+        select *
+        from Billing
+        where status is null and cancel is null
+    </select>
+    <update id="updateBillingStatus">
+        update Billing
+        set status=1
+        where cno=#{cno} and cancel is null
+    </update>
+    <select id="getListByBillingCidBid" resultType="java.util.Map">
+        select *
+        from Billing
+        where cid = #{cid} and bid = #{bid} and cancel is null
+    </select>
+</mapper>

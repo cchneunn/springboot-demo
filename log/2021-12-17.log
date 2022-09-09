@@ -1,0 +1,286 @@
+2021-12-17 09:43:46,334 INFO  [background-preinit] Version: HV000001: Hibernate Validator 6.0.13.Final
+2021-12-17 09:43:46,589 INFO  [main] SpringbootApplication: Starting SpringbootApplication using Java 1.8.0_131 on DESKTOP-UCTQGUL with PID 24248 (G:\springboot-demo\target\classes started by CCH in G:\springboot-demo)
+2021-12-17 09:43:46,589 INFO  [main] SpringbootApplication: The following profiles are active: test
+2021-12-17 09:43:49,745 INFO  [main] TomcatWebServer: Tomcat initialized with port(s): 8082 (http)
+2021-12-17 09:43:49,756 INFO  [main] Http11NioProtocol: Initializing ProtocolHandler ["http-nio-8082"]
+2021-12-17 09:43:49,756 INFO  [main] StandardService: Starting service [Tomcat]
+2021-12-17 09:43:49,756 INFO  [main] StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-17 09:43:49,759 INFO  [main] AprLifecycleListener: An older version [1.2.25] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2021-12-17 09:43:49,759 INFO  [main] AprLifecycleListener: Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-17 09:43:49,759 INFO  [main] AprLifecycleListener: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2021-12-17 09:43:49,759 INFO  [main] AprLifecycleListener: APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-17 09:43:49,828 INFO  [main] AprLifecycleListener: OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-17 09:43:50,100 INFO  [main] [/]: Initializing Spring embedded WebApplicationContext
+2021-12-17 09:43:50,100 INFO  [main] ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 3257 ms
+2021-12-17 09:43:51,135 INFO  [main] PropertySourcedRequestMappingHandlerMapping: Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-12-17 09:43:51,544 INFO  [main] Http11NioProtocol: Starting ProtocolHandler ["http-nio-8082"]
+2021-12-17 09:43:51,560 INFO  [main] TomcatWebServer: Tomcat started on port(s): 8082 (http) with context path ''
+2021-12-17 09:43:51,562 INFO  [main] DocumentationPluginsBootstrapper: Context refreshed
+2021-12-17 09:43:51,600 INFO  [main] DocumentationPluginsBootstrapper: Found 1 custom documentation plugin(s)
+2021-12-17 09:43:51,664 INFO  [main] ApiListingReferenceScanner: Scanning for api listing references
+2021-12-17 09:43:51,879 INFO  [main] SpringbootApplication: Started SpringbootApplication in 7.226 seconds (JVM running for 8.35)
+2021-12-17 09:44:00,015 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-17 09:44:00,728 INFO  [scheduling-1] RetryExec: I/O exception (java.net.NoRouteToHostException) caught when processing request to {}->http://22.36.12.109:20089: No route to host: connect
+2021-12-17 09:44:00,728 INFO  [scheduling-1] RetryExec: Retrying request to {}->http://22.36.12.109:20089
+2021-12-17 09:44:00,746 INFO  [scheduling-1] RetryExec: I/O exception (java.net.NoRouteToHostException) caught when processing request to {}->http://22.36.12.109:20089: No route to host: connect
+2021-12-17 09:44:00,746 INFO  [scheduling-1] RetryExec: Retrying request to {}->http://22.36.12.109:20089
+2021-12-17 09:44:00,746 INFO  [scheduling-1] RetryExec: I/O exception (java.net.NoRouteToHostException) caught when processing request to {}->http://22.36.12.109:20089: No route to host: connect
+2021-12-17 09:44:00,747 INFO  [scheduling-1] RetryExec: Retrying request to {}->http://22.36.12.109:20089
+2021-12-17 09:44:00,768 ERROR [scheduling-1] ScheduledTask: null
+java.lang.NullPointerException: null
+	at com.cch.demo.account.util.HttpClientUtil.post(HttpClientUtil.java:99)
+	at com.cch.demo.account.scheduled.ScheduledTask.getToken(ScheduledTask.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2021-12-17 09:44:00,768 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-17 09:44:00,796 INFO  [scheduling-1] HikariDataSource: HikariPool-1 - Starting...
+2021-12-17 09:44:01,057 INFO  [scheduling-1] PoolBase: HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2021-12-17 09:44:01,060 INFO  [scheduling-1] HikariDataSource: HikariPool-1 - Start completed.
+2021-12-17 09:44:01,191 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}]
+2021-12-17 09:44:01,191 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-17 09:44:10,012 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-17 09:44:10,039 INFO  [scheduling-1] RetryExec: I/O exception (java.net.NoRouteToHostException) caught when processing request to {}->http://22.36.12.109:20089: No route to host: connect
+2021-12-17 09:44:10,039 INFO  [scheduling-1] RetryExec: Retrying request to {}->http://22.36.12.109:20089
+2021-12-17 09:44:10,068 INFO  [scheduling-1] RetryExec: I/O exception (java.net.NoRouteToHostException) caught when processing request to {}->http://22.36.12.109:20089: No route to host: connect
+2021-12-17 09:44:10,068 INFO  [scheduling-1] RetryExec: Retrying request to {}->http://22.36.12.109:20089
+2021-12-17 09:44:10,088 INFO  [scheduling-1] RetryExec: I/O exception (java.net.NoRouteToHostException) caught when processing request to {}->http://22.36.12.109:20089: No route to host: connect
+2021-12-17 09:44:10,088 INFO  [scheduling-1] RetryExec: Retrying request to {}->http://22.36.12.109:20089
+2021-12-17 09:44:10,112 ERROR [scheduling-1] ScheduledTask: null
+java.lang.NullPointerException: null
+	at com.cch.demo.account.util.HttpClientUtil.post(HttpClientUtil.java:99)
+	at com.cch.demo.account.scheduled.ScheduledTask.getToken(ScheduledTask.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2021-12-17 09:44:20,014 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-17 09:44:20,030 INFO  [scheduling-1] RetryExec: I/O exception (java.net.NoRouteToHostException) caught when processing request to {}->http://22.36.12.109:20089: No route to host: connect
+2021-12-17 09:44:20,030 INFO  [scheduling-1] RetryExec: Retrying request to {}->http://22.36.12.109:20089
+2021-12-17 09:44:20,046 INFO  [scheduling-1] RetryExec: I/O exception (java.net.NoRouteToHostException) caught when processing request to {}->http://22.36.12.109:20089: No route to host: connect
+2021-12-17 09:44:20,046 INFO  [scheduling-1] RetryExec: Retrying request to {}->http://22.36.12.109:20089
+2021-12-17 09:44:20,061 INFO  [scheduling-1] RetryExec: I/O exception (java.net.NoRouteToHostException) caught when processing request to {}->http://22.36.12.109:20089: No route to host: connect
+2021-12-17 09:44:20,061 INFO  [scheduling-1] RetryExec: Retrying request to {}->http://22.36.12.109:20089
+2021-12-17 09:44:20,077 ERROR [scheduling-1] ScheduledTask: null
+java.lang.NullPointerException: null
+	at com.cch.demo.account.util.HttpClientUtil.post(HttpClientUtil.java:99)
+	at com.cch.demo.account.scheduled.ScheduledTask.getToken(ScheduledTask.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2021-12-17 09:44:30,012 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-17 09:44:30,038 INFO  [scheduling-1] RetryExec: I/O exception (java.net.NoRouteToHostException) caught when processing request to {}->http://22.36.12.109:20089: No route to host: connect
+2021-12-17 09:44:30,039 INFO  [scheduling-1] RetryExec: Retrying request to {}->http://22.36.12.109:20089
+2021-12-17 09:44:30,058 INFO  [scheduling-1] RetryExec: I/O exception (java.net.NoRouteToHostException) caught when processing request to {}->http://22.36.12.109:20089: No route to host: connect
+2021-12-17 09:44:30,058 INFO  [scheduling-1] RetryExec: Retrying request to {}->http://22.36.12.109:20089
+2021-12-17 09:44:30,084 INFO  [scheduling-1] RetryExec: I/O exception (java.net.NoRouteToHostException) caught when processing request to {}->http://22.36.12.109:20089: No route to host: connect
+2021-12-17 09:44:30,085 INFO  [scheduling-1] RetryExec: Retrying request to {}->http://22.36.12.109:20089
+2021-12-17 09:44:30,101 ERROR [scheduling-1] ScheduledTask: null
+java.lang.NullPointerException: null
+	at com.cch.demo.account.util.HttpClientUtil.post(HttpClientUtil.java:99)
+	at com.cch.demo.account.scheduled.ScheduledTask.getToken(ScheduledTask.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2021-12-17 09:44:30,102 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-17 09:44:30,109 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}]
+2021-12-17 09:44:30,109 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-17 09:44:40,010 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-17 09:44:40,042 INFO  [scheduling-1] RetryExec: I/O exception (java.net.NoRouteToHostException) caught when processing request to {}->http://22.36.12.109:20089: No route to host: connect
+2021-12-17 09:44:40,042 INFO  [scheduling-1] RetryExec: Retrying request to {}->http://22.36.12.109:20089
+2021-12-17 09:44:40,061 INFO  [scheduling-1] RetryExec: I/O exception (java.net.NoRouteToHostException) caught when processing request to {}->http://22.36.12.109:20089: No route to host: connect
+2021-12-17 09:44:40,061 INFO  [scheduling-1] RetryExec: Retrying request to {}->http://22.36.12.109:20089
+2021-12-17 09:44:40,077 INFO  [scheduling-1] RetryExec: I/O exception (java.net.NoRouteToHostException) caught when processing request to {}->http://22.36.12.109:20089: No route to host: connect
+2021-12-17 09:44:40,077 INFO  [scheduling-1] RetryExec: Retrying request to {}->http://22.36.12.109:20089
+2021-12-17 09:44:40,080 ERROR [scheduling-1] ScheduledTask: null
+java.lang.NullPointerException: null
+	at com.cch.demo.account.util.HttpClientUtil.post(HttpClientUtil.java:99)
+	at com.cch.demo.account.scheduled.ScheduledTask.getToken(ScheduledTask.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2021-12-17 09:44:50,017 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-17 09:44:50,053 INFO  [scheduling-1] RetryExec: I/O exception (java.net.NoRouteToHostException) caught when processing request to {}->http://22.36.12.109:20089: No route to host: connect
+2021-12-17 09:44:50,053 INFO  [scheduling-1] RetryExec: Retrying request to {}->http://22.36.12.109:20089
+2021-12-17 09:44:50,078 INFO  [scheduling-1] RetryExec: I/O exception (java.net.NoRouteToHostException) caught when processing request to {}->http://22.36.12.109:20089: No route to host: connect
+2021-12-17 09:44:50,078 INFO  [scheduling-1] RetryExec: Retrying request to {}->http://22.36.12.109:20089
+2021-12-17 09:44:50,093 INFO  [scheduling-1] RetryExec: I/O exception (java.net.NoRouteToHostException) caught when processing request to {}->http://22.36.12.109:20089: No route to host: connect
+2021-12-17 09:44:50,093 INFO  [scheduling-1] RetryExec: Retrying request to {}->http://22.36.12.109:20089
+2021-12-17 09:44:50,116 ERROR [scheduling-1] ScheduledTask: null
+java.lang.NullPointerException: null
+	at com.cch.demo.account.util.HttpClientUtil.post(HttpClientUtil.java:99)
+	at com.cch.demo.account.scheduled.ScheduledTask.getToken(ScheduledTask.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2021-12-17 09:45:00,027 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-17 09:45:00,057 INFO  [scheduling-1] RetryExec: I/O exception (java.net.NoRouteToHostException) caught when processing request to {}->http://22.36.12.109:20089: No route to host: connect
+2021-12-17 09:45:00,058 INFO  [scheduling-1] RetryExec: Retrying request to {}->http://22.36.12.109:20089
+2021-12-17 09:45:00,059 INFO  [scheduling-1] RetryExec: I/O exception (java.net.NoRouteToHostException) caught when processing request to {}->http://22.36.12.109:20089: No route to host: connect
+2021-12-17 09:45:00,059 INFO  [scheduling-1] RetryExec: Retrying request to {}->http://22.36.12.109:20089
+2021-12-17 09:45:00,078 INFO  [scheduling-1] RetryExec: I/O exception (java.net.NoRouteToHostException) caught when processing request to {}->http://22.36.12.109:20089: No route to host: connect
+2021-12-17 09:45:00,078 INFO  [scheduling-1] RetryExec: Retrying request to {}->http://22.36.12.109:20089
+2021-12-17 09:45:00,105 ERROR [scheduling-1] ScheduledTask: null
+java.lang.NullPointerException: null
+	at com.cch.demo.account.util.HttpClientUtil.post(HttpClientUtil.java:99)
+	at com.cch.demo.account.scheduled.ScheduledTask.getToken(ScheduledTask.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2021-12-17 09:45:00,106 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-17 09:45:00,111 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}]
+2021-12-17 09:45:00,111 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-17 09:45:10,001 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-17 09:45:10,017 INFO  [scheduling-1] RetryExec: I/O exception (java.net.NoRouteToHostException) caught when processing request to {}->http://22.36.12.109:20089: No route to host: connect
+2021-12-17 09:45:10,017 INFO  [scheduling-1] RetryExec: Retrying request to {}->http://22.36.12.109:20089
+2021-12-17 09:45:10,033 INFO  [scheduling-1] RetryExec: I/O exception (java.net.NoRouteToHostException) caught when processing request to {}->http://22.36.12.109:20089: No route to host: connect
+2021-12-17 09:45:10,033 INFO  [scheduling-1] RetryExec: Retrying request to {}->http://22.36.12.109:20089
+2021-12-17 09:45:10,048 INFO  [scheduling-1] RetryExec: I/O exception (java.net.NoRouteToHostException) caught when processing request to {}->http://22.36.12.109:20089: No route to host: connect
+2021-12-17 09:45:10,048 INFO  [scheduling-1] RetryExec: Retrying request to {}->http://22.36.12.109:20089
+2021-12-17 09:45:10,064 ERROR [scheduling-1] ScheduledTask: null
+java.lang.NullPointerException: null
+	at com.cch.demo.account.util.HttpClientUtil.post(HttpClientUtil.java:99)
+	at com.cch.demo.account.scheduled.ScheduledTask.getToken(ScheduledTask.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2021-12-17 12:45:11,883 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-17 12:45:11,898 INFO  [scheduling-1] RetryExec: I/O exception (java.net.NoRouteToHostException) caught when processing request to {}->http://22.36.12.109:20089: No route to host: connect
+2021-12-17 12:45:11,898 INFO  [scheduling-1] RetryExec: Retrying request to {}->http://22.36.12.109:20089
+2021-12-17 12:45:11,914 INFO  [scheduling-1] RetryExec: I/O exception (java.net.NoRouteToHostException) caught when processing request to {}->http://22.36.12.109:20089: No route to host: connect
+2021-12-17 12:45:11,914 INFO  [scheduling-1] RetryExec: Retrying request to {}->http://22.36.12.109:20089
+2021-12-17 12:45:11,930 INFO  [scheduling-1] RetryExec: I/O exception (java.net.NoRouteToHostException) caught when processing request to {}->http://22.36.12.109:20089: No route to host: connect
+2021-12-17 12:45:11,930 INFO  [scheduling-1] RetryExec: Retrying request to {}->http://22.36.12.109:20089
+2021-12-17 12:45:11,945 ERROR [scheduling-1] ScheduledTask: null
+java.lang.NullPointerException: null
+	at com.cch.demo.account.util.HttpClientUtil.post(HttpClientUtil.java:99)
+	at com.cch.demo.account.scheduled.ScheduledTask.getToken(ScheduledTask.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2021-12-17 12:45:11,945 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-17 12:45:12,389 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}]
+2021-12-17 12:45:12,389 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-17 12:45:20,009 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-17 12:45:20,025 INFO  [scheduling-1] RetryExec: I/O exception (java.net.NoRouteToHostException) caught when processing request to {}->http://22.36.12.109:20089: No route to host: connect
+2021-12-17 12:45:20,025 INFO  [scheduling-1] RetryExec: Retrying request to {}->http://22.36.12.109:20089
+2021-12-17 12:45:20,041 INFO  [scheduling-1] RetryExec: I/O exception (java.net.NoRouteToHostException) caught when processing request to {}->http://22.36.12.109:20089: No route to host: connect
+2021-12-17 12:45:20,041 INFO  [scheduling-1] RetryExec: Retrying request to {}->http://22.36.12.109:20089
+2021-12-17 12:45:20,072 INFO  [scheduling-1] RetryExec: I/O exception (java.net.NoRouteToHostException) caught when processing request to {}->http://22.36.12.109:20089: No route to host: connect
+2021-12-17 12:45:20,072 INFO  [scheduling-1] RetryExec: Retrying request to {}->http://22.36.12.109:20089
+2021-12-17 12:45:20,072 ERROR [scheduling-1] ScheduledTask: null
+java.lang.NullPointerException: null
+	at com.cch.demo.account.util.HttpClientUtil.post(HttpClientUtil.java:99)
+	at com.cch.demo.account.scheduled.ScheduledTask.getToken(ScheduledTask.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)

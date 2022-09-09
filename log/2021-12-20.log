@@ -1,0 +1,144 @@
+2021-12-20 09:34:24,588 INFO  [main] SpringbootApplication: Starting SpringbootApplication using Java 1.8.0_131 on DESKTOP-UCTQGUL with PID 5004 (G:\springboot-demo\target\classes started by CCH in G:\springboot-demo)
+2021-12-20 09:34:24,588 INFO  [background-preinit] Version: HV000001: Hibernate Validator 6.0.13.Final
+2021-12-20 09:34:24,589 INFO  [main] SpringbootApplication: The following profiles are active: test
+2021-12-20 09:34:27,115 INFO  [main] TomcatWebServer: Tomcat initialized with port(s): 8082 (http)
+2021-12-20 09:34:27,144 INFO  [main] Http11NioProtocol: Initializing ProtocolHandler ["http-nio-8082"]
+2021-12-20 09:34:27,144 INFO  [main] StandardService: Starting service [Tomcat]
+2021-12-20 09:34:27,144 INFO  [main] StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-20 09:34:27,147 INFO  [main] AprLifecycleListener: An older version [1.2.25] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2021-12-20 09:34:27,147 INFO  [main] AprLifecycleListener: Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-20 09:34:27,147 INFO  [main] AprLifecycleListener: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2021-12-20 09:34:27,147 INFO  [main] AprLifecycleListener: APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-20 09:34:27,215 INFO  [main] AprLifecycleListener: OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-20 09:34:27,507 INFO  [main] [/]: Initializing Spring embedded WebApplicationContext
+2021-12-20 09:34:27,507 INFO  [main] ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 2810 ms
+2021-12-20 09:34:28,596 INFO  [main] PropertySourcedRequestMappingHandlerMapping: Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-12-20 09:34:28,940 INFO  [main] Http11NioProtocol: Starting ProtocolHandler ["http-nio-8082"]
+2021-12-20 09:34:28,963 INFO  [main] TomcatWebServer: Tomcat started on port(s): 8082 (http) with context path ''
+2021-12-20 09:34:28,963 INFO  [main] DocumentationPluginsBootstrapper: Context refreshed
+2021-12-20 09:34:29,014 INFO  [main] DocumentationPluginsBootstrapper: Found 1 custom documentation plugin(s)
+2021-12-20 09:34:29,102 INFO  [main] ApiListingReferenceScanner: Scanning for api listing references
+2021-12-20 09:34:29,334 INFO  [main] SpringbootApplication: Started SpringbootApplication in 5.852 seconds (JVM running for 7.069)
+2021-12-20 09:34:30,013 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-20 09:34:31,012 INFO  [scheduling-1] RetryExec: I/O exception (java.net.NoRouteToHostException) caught when processing request to {}->http://22.36.12.109:20089: No route to host: connect
+2021-12-20 09:34:31,012 INFO  [scheduling-1] RetryExec: Retrying request to {}->http://22.36.12.109:20089
+2021-12-20 09:34:31,025 INFO  [scheduling-1] RetryExec: I/O exception (java.net.NoRouteToHostException) caught when processing request to {}->http://22.36.12.109:20089: No route to host: connect
+2021-12-20 09:34:31,025 INFO  [scheduling-1] RetryExec: Retrying request to {}->http://22.36.12.109:20089
+2021-12-20 09:34:31,052 INFO  [scheduling-1] RetryExec: I/O exception (java.net.NoRouteToHostException) caught when processing request to {}->http://22.36.12.109:20089: No route to host: connect
+2021-12-20 09:34:31,052 INFO  [scheduling-1] RetryExec: Retrying request to {}->http://22.36.12.109:20089
+2021-12-20 09:34:31,072 ERROR [scheduling-1] ScheduledTask: null
+java.lang.NullPointerException: null
+	at com.cch.demo.account.util.HttpClientUtil.post(HttpClientUtil.java:99)
+	at com.cch.demo.account.scheduled.ScheduledTask.getToken(ScheduledTask.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2021-12-20 09:36:34,561 INFO  [background-preinit] Version: HV000001: Hibernate Validator 6.0.13.Final
+2021-12-20 09:36:34,566 INFO  [main] SpringbootApplication: Starting SpringbootApplication using Java 1.8.0_131 on DESKTOP-UCTQGUL with PID 10028 (G:\springboot-demo\target\classes started by CCH in G:\springboot-demo)
+2021-12-20 09:36:34,567 INFO  [main] SpringbootApplication: The following profiles are active: test
+2021-12-20 09:36:39,883 INFO  [main] TomcatWebServer: Tomcat initialized with port(s): 8082 (http)
+2021-12-20 09:36:39,893 INFO  [main] Http11NioProtocol: Initializing ProtocolHandler ["http-nio-8082"]
+2021-12-20 09:36:39,894 INFO  [main] StandardService: Starting service [Tomcat]
+2021-12-20 09:36:39,894 INFO  [main] StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-20 09:36:39,895 INFO  [main] AprLifecycleListener: An older version [1.2.25] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2021-12-20 09:36:39,895 INFO  [main] AprLifecycleListener: Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-20 09:36:39,895 INFO  [main] AprLifecycleListener: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2021-12-20 09:36:39,895 INFO  [main] AprLifecycleListener: APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-20 09:36:39,897 INFO  [main] AprLifecycleListener: OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-20 09:36:40,101 INFO  [main] [/]: Initializing Spring embedded WebApplicationContext
+2021-12-20 09:36:40,101 INFO  [main] ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 5446 ms
+2021-12-20 09:36:40,906 INFO  [main] PropertySourcedRequestMappingHandlerMapping: Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-12-20 09:36:41,195 INFO  [main] Http11NioProtocol: Starting ProtocolHandler ["http-nio-8082"]
+2021-12-20 09:36:41,212 INFO  [main] TomcatWebServer: Tomcat started on port(s): 8082 (http) with context path ''
+2021-12-20 09:36:41,213 INFO  [main] DocumentationPluginsBootstrapper: Context refreshed
+2021-12-20 09:36:41,237 INFO  [main] DocumentationPluginsBootstrapper: Found 1 custom documentation plugin(s)
+2021-12-20 09:36:41,263 INFO  [main] ApiListingReferenceScanner: Scanning for api listing references
+2021-12-20 09:36:41,490 INFO  [main] SpringbootApplication: Started SpringbootApplication in 7.472 seconds (JVM running for 7.991)
+2021-12-20 09:36:50,013 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-20 09:36:50,669 INFO  [http-nio-8082-exec-1] [/]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-20 09:36:50,669 INFO  [http-nio-8082-exec-1] DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+2021-12-20 09:36:50,670 INFO  [http-nio-8082-exec-1] DispatcherServlet: Completed initialization in 1 ms
+2021-12-20 09:36:50,908 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-20 09:36:50,908 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-20 09:37:00,018 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-20 09:37:00,032 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-20 09:37:00,032 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-20 09:37:00,033 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-20 09:37:00,104 INFO  [scheduling-1] HikariDataSource: HikariPool-1 - Starting...
+2021-12-20 09:37:00,276 INFO  [scheduling-1] PoolBase: HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2021-12-20 09:37:00,279 INFO  [scheduling-1] HikariDataSource: HikariPool-1 - Start completed.
+2021-12-20 09:37:00,567 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=202154321001, PAYENDTIME=20211101, BID=bill2, CREATETIME=2021-11-09 13:34:09.0, TYPE=0, CID=202154321001}, {EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}, {EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=202154321003, PAYENDTIME=20211101, BID=bill1, CREATETIME=2021-11-09 13:34:37.0, TYPE=0, CID=202154321003}]
+2021-12-20 09:37:00,567 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：202154321001,支付金额：3000,账单号：bill2
+2021-12-20 09:37:00,597 INFO  [scheduling-1] ScheduledService: 合同号：202154321001在流水表核账金额：3000
+2021-12-20 09:37:00,597 INFO  [scheduling-1] ScheduledService: 合同号：202154321001核账成功
+2021-12-20 09:37:00,597 INFO  [scheduling-1] ScheduledService: ==========发送请求给住建局，应收单据回调接口开始==========
+2021-12-20 09:37:00,597 INFO  [scheduling-1] ScheduledService: POST请求头{x-auth-token=woshiyigetoken, x-app-auth=dlfcApponI4vHNN}
+2021-12-20 09:37:00,603 INFO  [scheduling-1] ScheduledService: 流水表取得的数据[Tranlog(accountnumber=621081060001
+, contract=202154321001, paytime=20211215, payamount=null, status=null, serialnumber=null), Tranlog(accountnumber=621081060001
+, contract=202154321001, paytime=20211215, payamount=null, status=null, serialnumber=null), Tranlog(accountnumber=621081060001, contract=202154321001, paytime=20211214, payamount=1000, status=null, serialnumber=005), Tranlog(accountnumber=621081060001, contract=202154321001, paytime=20211213, payamount=1000, status=null, serialnumber=004), Tranlog(accountnumber=621081060001, contract=202154321001, paytime=20211212, payamount=1000, status=null, serialnumber=003)]
+2021-12-20 09:37:00,603 INFO  [scheduling-1] ScheduledService: POST请求体{serialbigDecimal=null, payTime=20211215, remark=null, bid=bill2, payStatus=1}
+2021-12-20 09:37:00,676 ERROR [scheduling-1] HttpClientUtil: 向住建局发请求情况正常，请求返回体为：HttpResponseProxy{HTTP/1.1 200  [Content-Type: application/json, Transfer-Encoding: chunked, Date: Mon, 20 Dec 2021 01:37:00 GMT, Keep-Alive: timeout=60, Connection: keep-alive] ResponseEntityProxy{[Content-Type: application/json,Chunked: true]}}
+2021-12-20 09:37:00,694 INFO  [scheduling-1] ScheduledService: {data={status=1.0}, message=成功, status=200.0}
+2021-12-20 09:37:00,695 INFO  [scheduling-1] ScheduledService: 住建局返回内容status字段：200.0
+2021-12-20 09:37:00,697 INFO  [scheduling-1] ScheduledService: 应收单据表合同号：202154321001状态已修改
+2021-12-20 09:37:00,743 INFO  [scheduling-1] ScheduledService: 流水表合同号：202154321001状态已修改
+2021-12-20 09:37:00,750 INFO  [scheduling-1] ScheduledTask: 第1条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-20 09:37:00,752 INFO  [scheduling-1] ScheduledTask: 第2条应收单据核账开始,合同备案号：202154321003,支付金额：3000,账单号：bill1
+2021-12-20 09:37:00,753 INFO  [scheduling-1] ScheduledService: 合同号：202154321003在流水表核账金额：3000
+2021-12-20 09:37:00,753 INFO  [scheduling-1] ScheduledService: 合同号：202154321003核账成功
+2021-12-20 09:37:00,753 INFO  [scheduling-1] ScheduledService: ==========发送请求给住建局，应收单据回调接口开始==========
+2021-12-20 09:37:00,753 INFO  [scheduling-1] ScheduledService: POST请求头{x-auth-token=woshiyigetoken, x-app-auth=dlfcApponI4vHNN}
+2021-12-20 09:37:00,756 INFO  [scheduling-1] ScheduledService: 流水表取得的数据[Tranlog(accountnumber=621081060001, contract=202154321003, paytime=20211211, payamount=1000, status=null, serialnumber=002), Tranlog(accountnumber=621081060001, contract=202154321003, paytime=20211210, payamount=2000, status=null, serialnumber=001)]
+2021-12-20 09:37:00,756 INFO  [scheduling-1] ScheduledService: POST请求体{serialbigDecimal=002, payTime=20211211, remark=null, bid=bill1, payStatus=1}
+2021-12-20 09:37:00,760 ERROR [scheduling-1] HttpClientUtil: 向住建局发请求情况正常，请求返回体为：HttpResponseProxy{HTTP/1.1 200  [Content-Type: application/json, Transfer-Encoding: chunked, Date: Mon, 20 Dec 2021 01:37:00 GMT, Keep-Alive: timeout=60, Connection: keep-alive] ResponseEntityProxy{[Content-Type: application/json,Chunked: true]}}
+2021-12-20 09:37:00,760 INFO  [scheduling-1] ScheduledService: {data={status=1.0}, message=成功, status=200.0}
+2021-12-20 09:37:00,760 INFO  [scheduling-1] ScheduledService: 住建局返回内容status字段：200.0
+2021-12-20 09:37:00,761 INFO  [scheduling-1] ScheduledService: 应收单据表合同号：202154321003状态已修改
+2021-12-20 09:37:00,762 INFO  [scheduling-1] ScheduledService: 流水表合同号：202154321003状态已修改
+2021-12-20 09:37:10,014 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-20 09:37:10,033 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-20 09:37:10,034 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-20 09:37:20,014 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-20 09:37:20,029 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-20 09:37:20,029 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-20 09:37:30,005 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-20 09:37:30,038 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-20 09:37:30,038 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-20 09:37:40,020 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-20 09:37:40,036 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-20 09:37:40,036 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-20 09:37:50,003 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-20 09:37:50,024 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-20 09:37:50,024 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-20 09:38:00,010 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-20 09:38:00,030 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-20 09:38:00,030 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-20 09:38:00,030 INFO  [scheduling-1] ScheduledTask: ==========入金核账开始=========
+2021-12-20 09:38:00,033 INFO  [scheduling-1] ScheduledTask: Billing应收单据表核账失败的记录：[{EID=qiye1, PAYMENTAMOUNT=3000, SPECIALACCOUNTNO=621081060001, CNO=2021254321100, PAYENDTIME=20211101, BID=bill3, CREATETIME=2021-11-09 13:34:28.0, TYPE=0, CID=202154321004}]
+2021-12-20 09:38:00,033 INFO  [scheduling-1] ScheduledTask: 第0条应收单据核账开始,合同备案号：2021254321100,支付金额：3000,账单号：bill3
+2021-12-20 09:38:10,002 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-20 09:38:10,017 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-20 09:38:10,017 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-20 09:38:20,001 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-20 09:38:20,013 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-20 09:38:20,015 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-20 09:38:30,012 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-20 09:38:30,030 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-20 09:38:30,031 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-20 09:38:40,015 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-20 09:38:40,029 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-20 09:38:40,029 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken
+2021-12-20 09:38:50,003 INFO  [scheduling-1] ScheduledTask: ==========发送请求给住建局,开始取token=========
+2021-12-20 09:38:50,019 INFO  [scheduling-1] HttpClientUtil: {data=woshiyigetoken, message=获取token成功, status=200.0}
+2021-12-20 09:38:50,019 INFO  [scheduling-1] ScheduledTask: TOKEN:woshiyigetoken

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cch.demo.account.mapper.AccountMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.cch.demo.account.entity.Account">
+        <id column="code" property="code" />
+        <result column="name" property="name" />
+        <result column="specialaccountno" property="specialaccountno" />
+        <result column="eid" property="eid" />
+        <result column="createtime" property="createtime" />
+        <result column="activation" property="activation" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        code, name, specialaccountno,eid,createtime
+    </sql>
+    <select id="getListByAccountSpecialAccountno" resultType="java.util.Map">
+        select *
+        from Account
+        where specialaccountno = #{specialaccountno}
+    </select>
+    <update id="updateAccountActivation">
+        update Account
+        set activation=1
+        where specialaccountno=#{specialaccountno}
+    </update>
+
+</mapper>

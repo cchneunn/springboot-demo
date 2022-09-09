@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cch.demo.account.mapper.TranlogMapper">
+
+    <!-- 通用查询映射结果type返回的类型可以是billing -->
+    <resultMap id="BaseResultMap" type="com.cch.demo.account.entity.Tranlog">
+        <id column="accountnumber" property="accountnumber" />
+        <result column="contract" property="contract" />
+        <result column="payamount" property="payamount" />
+        <result column="paytime" property="paytime" />
+        <result column="status" property="status" />
+        <result column="serialnumber" property="serialnumber" />
+
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        accountnumber,contract,paytime,payamount
+    </sql>
+    <select id="getListByTranlogCid" resultType="com.cch.demo.account.entity.Tranlog">
+        select *
+        from Tranlog
+        where contract = #{cid}
+        order by paytime DESC
+    </select>
+    <select id="getListGroupByTranlogCid" resultType="java.util.Map">
+        select contract,sum(payamount) as payamount
+        from Tranlog
+        where contract = #{checkCno}
+        group by contract
+    </select>
+    <update id="updateTranlogStatus">
+        update Tranlog
+        set status=1
+        where contract=#{contract}
+    </update>
+    <insert id="insertAfmmoniaccinfo">
+        insert into AFMMONIACCINFO
+        select * from AFMMONIACCINFO_VIEW t
+        where
+                to_date(t."数据日期",'yyyyMMdd') between
+                (to_date(to_char(sysdate,'yyyyMMdd'),'yyyyMMdd') - interval'3' day)
+                and (to_date(to_char(sysdate,'yyyyMMdd'),'yyyyMMdd') - interval'3' day)
+    </insert>
+    <insert id="insertTranlog">
+        insert into Tranlog("ACCOUNTNUMBER", "CONTRACT","PAYTIME", "PAYAMOUNT", "SERIALNUMBER")
+        select "主账号","附言","交易日期","交易金额","交易流水号" from M_CTISG_VIEW t
+        where
+            to_date(t."交易日期",'yyyyMMdd') between
+                (to_date(to_char(sysdate,'yyyyMMdd'),'yyyyMMdd') - interval'4' day)
+                and (to_date(to_char(sysdate,'yyyyMMdd'),'yyyyMMdd') - interval'4' day)
+    </insert>
+</mapper>

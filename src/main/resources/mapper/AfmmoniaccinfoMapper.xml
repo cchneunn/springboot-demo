@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cch.demo.account.mapper.AfmmoniaccinfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.cch.demo.account.entity.Afmmoniaccinfo">
+        <id column="MONIACCNO" property="MONIACCNO" />
+        <result column="ACCSIGNSTATE" property="ACCSIGNSTATE" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        MONIACCNO,ACCSIGNSTATE
+    </sql>
+    <select id="getListByAfmmoniaccinfoAccsignstate" resultType="java.util.Map">
+        select ACCSIGNSTATE
+        from Afmmoniaccinfo
+        where MONIACCNO = #{MONIACCNO}
+    </select>
+
+</mapper>
